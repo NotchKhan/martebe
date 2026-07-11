@@ -1,0 +1,24 @@
+Created At: 2026-06-29T11:49:40Z
+Completed At: 2026-06-29T11:49:40Z
+File Path: `file:///c:/Users/User0528/Desktop/MARTEBE/app.js`
+Total Lines: 1021
+Total Bytes: 110774
+Showing lines 100 to 200
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+100: 
+101: // ── MENU DATA ─────────────────────────────────────────────────
+102: const MENU = [
+103:   // ЗАВТРАКИ
+104:   { id:101, cat:'breakfasts', name: { ru: 'Рисовая каша', kz: 'Күріш ботқасы', en: 'Rice porridge' },      weight:'250 г',          desc: { ru: 'Нежная рисовая каша на молоке со сливочным маслом.', kz: 'Сары май қосылған сүттегі күріш ботқасы.', en: 'Milk rice porridge with butter.' },  price:900, origPrice:null, img:'images/riceporridge.png',         emoji:'🥣', gradient:['#E0E0E0','#F5F5F5'], rating:95, reviews:10 },
+105:   { id:102, cat:'breakfasts', name: { ru: 'Сосиски вареные', kz: 'Қайнатылған шұжық', en: 'Boiled sausages' },   weight:'200 г',          desc: { ru: 'Горячие классические сосиски (отварные).', kz: 'Ыстық классикалық қайнатылған шұжықтар.', en: 'Hot classic boiled sausages.' },        price:800, origPrice:null, img:'images/варенныйсосиска.png',     emoji:'🌭', gradient:['#E63946','#F18A93'], rating:90, reviews:8 },
+106:   { id:103, cat:'breakfasts', name: { ru: 'Сосиски жареные', kz: 'Қуырылған шұжық', en: 'Fried sausages' },   weight:'200 г',          desc: { ru: 'Сочные сосиски (обжаренные) с хрустящей корочкой.', kz: 'Қытырлақ қабығы бар
+<truncated 45282 bytes>
+шашлык.png',  emoji:'🍗', gradient:['#D84315','#FFAB91'], rating:95, reviews:45 },
+189:   // СОУСЫ
+190:   { id:701, cat:'sauces',     name: { ru: 'Стручковый перец', kz: 'Ащы бұрыш', en: 'Hot pepper' },   weight:'50 г',           desc: { ru: 'Пикантный острый перец для любителей поострее.', kz: 'Ащыны ұнататындарға арналған пикантты ащы бұрыш.', en: 'Spicy hot pepper for spice lovers.' },                                 price:300,  origPrice:null, img:'images/стручковыйперец.png',  emoji:'🌶️', gradient:['#D32F2F','#FF5252'], rating:90, reviews:14 },
+191:   { id:702, cat:'sauces',     name: { ru: 'Аджика', kz: 'Аджика', en: 'Adjika' },             weight:'50 г',           desc: { ru: 'Острая домашняя аджика из свежих томатов и специй.', kz: 'Жаңа піскен қызанақ пен дәмдеуіштерден жасалған ащы үй аджикасы.', en: 'Spicy homemade adjika from fresh tomatoes and spices.' },                    price:350,  origPrice:null, img:'images/аджика.png',           emoji:'🍅', gradient:['#C62828','#EF5350'], rating:95, reviews:27 },
+192:   { id:703, cat:'sauces',     name: { ru: 'Чесночный соус', kz: 'Сарымсақ тұздығы', en: 'Garlic sauce' },     weight:'50 г',           desc: { ru: 'Нежный белый соус с ярким чесночным ароматом.', kz: 'Сарымсақтың хош иісі бар нәзік ақ тұздық.', en: 'Tender white sauce with bright garlic aroma.' },                        price:400,  origPrice:null, img:'images/чесночныйсоус.png',    emoji:'🧄', gradient:['#F5F5F5','#E0E0E0'], rating:98, reviews:42 },
+193:   { id:704, cat:'sauc
+<truncated 3388 bytes>
+
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.

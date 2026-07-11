@@ -1,0 +1,261 @@
+{
+  "errors": [],
+  "noPhotoItems": [
+    {
+      "id": 801,
+      "name": "Лепёшка",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 802,
+      "name": "Ржаной хлеб",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 803,
+      "name": "Самса с мясом",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 804,
+      "name": "Самса с курицей",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 805,
+      "name": "Баурсаки (6 шт)",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 806,
+      "name": "Баурсаки (10 шт)",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 807,
+      "name": "Баурсаки (1 кг)",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 808,
+      "name": "Каттама с луком",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 809,
+      "name": "Каттама классическая",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 810,
+      "name": "Астау нан",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 901,
+      "name": "Куриное ассорти",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 902,
+      "name": "Мясное ассорти (бол.)",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 903,
+      "name": "Мясное ассорти (мал.)",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 904,
+      "name": "Овощное ассорти",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 905,
+      "name": "Фруктовая нарезка",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 1001,
+      "name": "Бешбармак (6–8 чел)",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 1002,
+      "name": "Бешбармак (10–12 чел)",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 1003,
+      "name": "Казан-кебаб в астау",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 1004,
+      "name": "Куырдак (9–10 чел)",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 1005,
+      "name": "Мясной пир (6–8 чел)",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 1006,
+      "name": "Плов Чайхана",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 1007,
+      "name": "MIX Куырдак (6–8 чел)",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 2,
+      "name": "Комбо №2",
+      "origPrice": 1950
+    },
+    {
+      "id": 3,
+      "name": "Комбо Семейное",
+      "origPrice": 7800
+    },
+    {
+      "id": 12,
+      "name": "Плов",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 13,
+      "name": "Куырдак",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 14,
+      "name": "Шашлык баранина",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 20,
+      "name": "Лагман",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 21,
+      "name": "Шурпа",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 22,
+      "name": "Сорпа",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 30,
+      "name": "Оливье",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 31,
+      "name": "Ачик-чучук",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 32,
+      "name": "Морковь по-кор.",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 33,
+      "name": "Цезарь",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 40,
+      "name": "Самса",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 41,
+      "name": "Баурсак",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 50,
+      "name": "Айран",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 51,
+      "name": "Кумыс",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 52,
+      "name": "Чёрный чай",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 53,
+      "name": "Coca-Cola 0.5л",
+      "origPrice": null,
+      "isNew": true
+    },
+    {
+      "id": 54,
+      "name": "Сок апельсиновый",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 60,
+      "name": "Чак-чак",
+      "origPrice": null,
+      "isHit": true
+    },
+    {
+      "id": 61,
+      "name": "Мороженое",
+      "origPrice": null,
+      "isNew": true
+    }
+  ]
+}

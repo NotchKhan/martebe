@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>märtebe — Казахский ресторан | Сарыагаш</title>
+  <meta name="description" content="Ресторан märtebe в Сарыагаше (Кошербаева 1А). Настоящая казахская и европейская кухня. Доставка и бронирование кабинок онлайн через WhatsApp." />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="märtebe" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="märtebe — Казахский ресторан | Сарыагаш" />
+  <meta property="og:description" content="Настоящая казахская и европейская кухня. Заказ через WhatsApp. Адрес: Кошербаева 1А, Сарыагаш." />
+  <meta property="og:image" content="https://martebe.vercel.app/images/hero_bg.jpg" />
+  <meta property="og:url" content="https://martebe.vercel.app/" />
+  
+  <link rel="canonical" href="https://martebe.vercel.app/" />
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="märtebe — Казахский ресторан | Сарыагаш" />
+  <meta name="twitter:description" content="Настоящая казахская и европейская кухня. Заказ через WhatsApp. Адрес: Кошербаева 1А, Сарыагаш." />
+  <meta name="twitter:image" content="images/hero_bg.jpg" />
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "märtebe",
+    "url": "https://martebe.vercel.app/",
+    "image": "https://martebe.vercel.app/images/hero_bg.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Кошербаева 1А",
+      "addressLocality": "Сарыагаш",
+      "addressCountry": "KZ"
+    },
+    "telephone": "+77784829586",
+    "servesCuisine": ["Казахская кухня", "Европейская кухня"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "04:00"
+    }
+  }
+  </script>
+
+  <meta name="theme-color" content="#C8943A" />
+  <link rel="icon" href="images/1to1.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       HEADER (Fixed)
+       ════════════════════════════════════════════════════════ -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="header-logo">
+        <img src="images/IMG_0025.PNG" alt="märtebe logo" style="height: 32px; max-width: 100%; object-fit: contain;" />
+      </div>
+      <span class="header-loc" data-i18n="header_loc">📍 Сарыагаш · Кошербаева 1А</span>
+    </div>
+    <div class="header-actions">
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn active" data-lang="kz" onclick="setLang('kz')">KZ</button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">ZH</button>
+      </div>
+
+      <button class="icon-btn" id="search-btn" aria-label="Поиск по меню">🔍</button>
+      <button class="icon-btn" id="cart-icon-btn" aria-label="Корзина">
+        🛒
+        <span class="badge" id="header-badge"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════════════════
+       SEARCH BAR (slide-down on menu section)
+       ════════════════════════════════════════════════════════ -->
+  <div class="search-bar" id="search-bar" role="search">
+    <input
+      class="search-input"
+      id="search-input"
+      type="search"
+      placeholder="Найти блюдо..."
+      data-i18n-placeholder="search_placeholder"
+      autocomplete="off"
+      aria-label="Поиск по меню"
+    />
+    <button class="search-close" id="search-close-btn" aria-label="Отмена" data-i18n="search_close">Отмена</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       SUPER CATEGORY NAV (Блюда / Напитки / Хлебные / Банкеты)
+       ══════════════════════════════════════════════════════ -->
+  <nav class="super-cat-nav hidden" id="super-cat-nav" aria-label="Разделы меню">
+    <!-- rendered by app.js -->
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       CATEGORY NAV (Menu section only)
+       ══════════════════════════════════════════════════════ -->
+  <nav class="cat-nav hidden" id="cat-nav" aria-label="Категории меню">
+    <!-- rendered by app.js -->
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════
+       MAIN  —  Sections
+       ════════════════════════════════════════════════════════ -->
+  <main class="app-main" id="app-main">
+
+    <!-- ╔════════════════════════════════════════════════════╗
+         ║  HOME SECTION
+         ╚════════════════════════════════════════════════════╝ -->
+    <div class="section" id="section-home">
+
+      <!-- Mini Hero Banner -->
+      <div class="home-hero">
+        <div class="home-hero-bg" aria-hidden="true"></div>
+        <div class="home-hero-overlay" aria-hidden="true"></div>
+        <div class="home-hero-content">
+          <div class="home-hero-tag" data-i18n="home_hero_tag">🌟 Казахский и европейский ресторан</div>
+          <h1 class="home-hero-title">märtebe</h1>
+          <p class="home-hero-sub" data-i18n="home_hero_sub">Еда на любой случай: если хочешь мясо то стейк и шашлык, хочешь экзотику - турецкие блюда, быстро - фаст фуд и даже европейское.<br>Заказ онлайн через WhatsApp 💬</p>
+        </div>
+      </div>
+
+      <!-- Action Cards -->
+      <div class="home-actions">
+
+        <div class="ha-card" style="--ac:#C8943A"
+             onclick="goToMenu()"
+             role="button" tabindex="0" id="ha-menu">
+          <span class="ha-arrow">→</span>
+          <span class="ha-icon">🍽️</span>
+          <span class="ha-title" data-i18n="ha_order">ЗАКАЗАТЬ</span>
+          <span class="ha-sub" data-i18n="ha_order_sub">22 блюда</span>
+        </div>
+
+        <div class="ha-card" style="--ac:#E63946"
+             onclick="goTo('promos')"
+             role="button" tabindex="0" id="ha-promos">
+          <span class="ha-arrow">→</span>
+          <span class="ha-icon">🔥</span>
+          <span class="ha-title" data-i18n="ha_promos">Акции</span>
+          <span class="ha-sub" data-i18n="ha_promos_sub">Скидки до 20%</span>
+        </div>
+
+        <div class="ha-card ha-card-full" style="--ac:#7B61FF"
+             onclick="goTo('cabins')"
+             role="button" tabindex="0" id="ha-cabins">
+          <span class="ha-arrow">→</span>
+          <div style="display:flex; align-items:center; gap: 14px;">
+            <span class="ha-icon" style="font-size:2.4rem">🛋️</span>
+            <div>
+              <span class="ha-title" style="font-size:1.1rem;display:block" data-i18n="ha_cabins">VIP Кабинки</span>
+              <span class="ha-sub" style="font-size:0.8rem" data-i18n="ha_cabins_sub">Бронь для компаний (3 кабинки)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ha-card ha-card-full" style="--ac:#00BFA5"
+             onclick="goTo('about')"
+             role="button" tabindex="0" id="ha-about">
+          <span class="ha-arrow">→</span>
+          <div style="display:flex; align-items:center; gap: 14px;">
+            <span class="ha-icon" style="font-size:1.8rem">📍</span>
+            <div>
+              <span class="ha-title" style="font-size:1.0rem;display:block" data-i18n="ha_about">Контакты и адрес</span>
+              <span class="ha-sub" style="font-size:0.8rem" data-i18n="ha_about_sub">Где мы находимся</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Promo Carousel -->
+      <div class="home-promo-ticker">
+        <div class="promo-slide" id="promo-slide-card">
+          <span class="promo-slide-icon" id="ps-icon">🔥</span>
+          <div class="promo-slide-text">
+            <div class="promo-slide-title" id="ps-title">Загрузка...</div>
+            <div class="promo-slide-sub" id="ps-sub"></div>
+          </div>
+          <div class="promo-slide-nav">
+            <button class="promo-slide-btn" onclick="prevPromo()" aria-label="Назад">‹</button>
+            <button class="promo-slide-btn" onclick="nextPromo()" aria-label="Вперёд">›</button>
+          </div>
+        </div>
+        <div class="promo-dots" id="promo-dots-home" aria-label="Акции"></div>
+      </div>
+
+      <!-- Trust / Stats Section -->
+      <div class="trust-section" id="trust-section">
+        <div class="trust-stats">
+          <div class="trust-stat">
+            <div class="trust-stat-num">4+</div>
+            <div class="trust-stat-label" data-i18n="trust_years">лет на рынке</div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-stat-num" id="trust-dishes-num">40+</div>
+            <div class="trust-stat-label" data-i18n="trust_dishes">блюд в меню</div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-stat-num">1000+</div>
+            <div class="trust-stat-label" data-i18n="trust_orders">заказов выполнено</div>
+          </div>
+        </div>
+        <div class="trust-cta">
+          <button class="trust-cta-btn primary" onclick="goToMenu()" id="trust-btn-menu">
+            🍽️ <span data-i18n="ha_order">ЗАКАЗАТЬ</span>
+          </button>
+          <button class="trust-cta-btn secondary" onclick="bookTable()" id="trust-btn-book">
+            📅 <span data-i18n="about_btn_book">Бронь столика</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Popular strip -->
+      <div class="home-popular">
+        <div class="home-popular-label">
+          <div style="display:flex; align-items:center; gap:6px;">
+            🔥 <span data-i18n="home_popular">Популярное</span>
+          </div>
+          <span class="home-see-all" onclick="goToMenu('second')" data-i18n="home_see_all">Всё меню →</span>
+        </div>
+        <div class="pop-scroll" id="pop-scroll"></div>
+      </div>
+
+    </div><!-- /section-home -->
+
+
+    <!-- ╔════════════════════════════════════════════════════╗
+         ║  MENU SECTION
+         ╚════════════════════════════════════════════════════╝ -->
+    <div class="section" id="section-menu">
+      <div class="food-grid" id="food-grid" role="list" aria-label="Меню">
+        <!-- rendered by app.js -->
+      </div>
+    </div>
+
+
+    <!-- ╔════════════════════════════════════════════════════╗
+         ║  PROMOS SECTION
+         ╚════════════════════════════════════════════════════╝ -->
+    <div class="section" id="section-promos">
+
+      <div class="promos-header">
+        <h2 data-i18n="promos_title">Акции и скидки</h2>
+        <p data-i18n="promos_sub">Специальные предложения только здесь и сейчас</p>
+      </div>
+
+      <!-- Promo banners (dynamic) -->
+      <div class="promo-banners" id="promo-banners-list"></div>
+
+      <!-- Discounted items grid (dynamic) -->
+      <div class="promos-grid-title" data-i18n="promos_items">Блюда по акции</div>
+      <div id="promos-items-grid"></div>
+
+    </div><!-- /section-promos -->
+
+    <!-- ╔════════════════════════════════════════════════════╗
+         ║  CABINS SECTION
+         ╚════════════════════════════════════════════════════╝ -->
+    <div class="section" id="section-cabins">
+      <div class="promos-header" style="padding: 16px 14px 0;">
+        <h2 data-i18n="cabins_title">VIP Кабинки</h2>
+        <p data-i18n="cabins_sub">Уютные уединённые зоны для вашего отдыха. 3 кабинки на выбор.</p>
+      </div>
+      <div class="cabins-list" id="cabins-list">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+
+
+    <!-- ╔════════════════════════════════════════════════════╗
+         ║  ABOUT SECTION
+         ╚════════════════════════════════════════════════════╝ -->
+    <div class="section" id="section-about">
+
+      <!-- Brand hero -->
+      <div class="about-hero">
+        <div class="about-logo" style="font-family:'Outfit';font-weight:300;">märtebe</div>
+        <div class="about-logo-sub" data-i18n="about_logo_sub">📍 Казахский ресторан · Сарыагаш</div>
+        <p class="about-logo-desc" data-i18n="about_logo_desc">
+          Мы находимся в Сарыагаше, улица Кошербаева 1А. Готовим с душой,
+          используя только свежие местные продукты и традиционные рецепты.
+        </p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="about-links">
+        <a href="https://www.instagram.com/martebe.kaz/" target="_blank" class="al-btn inst">
+          📸 Instagram
+        </a>
+        <a href="https://go.2gis.com/WGiOz" target="_blank" class="al-btn dgis">
+          🗺️ 2GIS
+        </a>
+      </div>
+
+      <!-- Values / Trust -->
+      <div class="about-values">
+        <div class="about-value-card">
+          <div class="about-value-icon">🥩</div>
+          <div class="about-value-title" data-i18n="value_meat_title">Свежее мясо</div>
+          <div class="about-value-desc" data-i18n="value_meat_desc">Используем только отборное фермерское мясо каждый день.</div>
+        </div>
+        <div class="about-value-card">
+          <div class="about-value-icon">👨‍🍳</div>
+          <div class="about-value-title" data-i18n="value_chef_title">Шеф-повара</div>
+          <div class="about-value-desc" data-i18n="value_chef_desc">Профессионалы с опытом приготовления национальных блюд.</div>
+        </div>
+        <div class="about-value-card">
+          <div class="about-value-icon">🕌</div>
+          <div class="about-value-title" data-i18n="value_halal_title">Халал</div>
+          <div class="about-value-desc" data-i18n="value_halal_desc">Строго соблюдаем все стандарты Халал.</div>
+        </div>
+        <div class="about-value-card">
+          <div class="about-value-icon">🏎️</div>
+          <div class="about-value-title" data-i18n="value_delivery_title">Доставка</div>
+          <div class="about-value-desc" data-i18n="value_delivery_desc">Бережная и быстрая доставка блюд горячими.</div>
+        </div>
+      </div>
+
+      <!-- Info grid -->
+      <div class="about-info-grid">
+        <div class="aig-card">
+          <span class="aig-icon">📍</span>
+          <div>
+            <div class="aig-label" data-i18n="about_address">Адрес</div>
+            <div class="aig-value"><span data-i18n="about_address_val">Сарыагаш, Кошербаева 1А</span><br><span style="font-size:0.75rem;font-weight:400;color:var(--text-muted)" data-i18n="about_floor">1-2 этаж</span></div>
+          </div>
+        </div>
+        <div class="aig-card">
+          <span class="aig-icon">🕐</span>
+          <div>
+            <div class="aig-label" data-i18n="about_hours">Часы работы</div>
+            <div class="aig-value">08:00 — 04:00<br><span style="font-size:0.75rem;font-weight:400;color:var(--text-muted)" data-i18n="about_daily">ежедневно</span></div>
+          </div>
+        </div>
+        <div class="aig-card">
+          <span class="aig-icon">📞</span>
+          <div>
+            <div class="aig-label" data-i18n="about_phone">Телефон</div>
+            <div class="aig-value">
+              <a href="tel:+77784829586" style="text-decoration:none;color:var(--text)">+7 778 482 9586</a>
+            </div>
+          </div>
+        </div>
+        <div class="aig-card">
+          <span class="aig-icon">💳</span>
+          <div>
+            <div class="aig-label" data-i18n="about_payment">Оплата</div>
+            <div class="aig-value" style="font-size:0.75rem;line-height:1.4" data-i18n="about_payment_methods">Картой, Наличными, Перевод, QR-код</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WhatsApp CTAs -->
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top: 20px;">
+        <button class="wa-about-btn" onclick="goToMenu('pizza');openDrawer()" style="background:linear-gradient(135deg, #25D366, #128C7E)" data-i18n="about_btn_delivery">
+          Заказать доставку
+        </button>
+        <button class="wa-about-btn" onclick="bookTable()" style="background:linear-gradient(135deg, var(--gold), var(--gold-light)); box-shadow: 0 4px 14px var(--gold-glow)" data-i18n="about_btn_book">
+          Бронь столика в зале
+        </button>
+      </div>
+
+      <!-- Developer Link -->
+      <div style="text-align:center; margin-top:30px; font-size:0.8rem; color:var(--text-muted);">
+        by NEXERA · <a href="https://nexeraasia.vercel.app/" target="_blank" style="color:var(--gold); text-decoration:none;">Связаться</a>
+      </div>
+
+    </div><!-- /section-about -->
+
+  </main><!-- /app-main -->
+
+  <!-- ════════════════════════════════════════════════════════
+       CART BOTTOM BAR
+       ════════════════════════════════════════════════════════ -->
+  <div class="cart-bar" id="cart-bar" role="button" tabindex="0" aria-label="Открыть корзину">
+    <span class="bar-pill" id="bar-count">0 позиций</span>
+    <span class="bar-label" data-i18n="cart_bar_label">Перейти в корзину</span>
+    <span class="bar-total" id="bar-total">0 ₸</span>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       BOTTOM TAB BAR
+       ════════════════════════════════════════════════════════ -->
+  <nav class="bottom-tabs" role="navigation" aria-label="Разделы">
+    <button class="btab" data-section="home"   onclick="goTo('home')"   aria-label="Главная">
+      <span class="btab-icon">🏠</span>
+      <span class="btab-label" data-i18n="tab_home">Главная</span>
+    </button>
+    <button class="btab" data-section="menu"   onclick="goToMenu()"    aria-label="Меню">
+      <span class="btab-icon">🍽️</span>
+      <span class="btab-label" data-i18n="tab_menu">Меню</span>
+    </button>
+    <button class="btab" data-section="promos" onclick="goTo('promos')" aria-label="Акции">
+      <span class="btab-icon">🔥</span>
+      <span class="btab-label" data-i18n="tab_promos">Акции</span>
+    </button>
+    <button class="btab" data-section="about"  onclick="goTo('about')"  aria-label="О нас">
+      <span class="btab-icon">📍</span>
+      <span class="btab-label" data-i18n="tab_about">О нас</span>
+    </button>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════
+       ITEM DETAIL MODAL — Bottom Sheet
+       ════════════════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-overlay" role="presentation"></div>
+
+  <div class="item-modal" id="item-modal" role="dialog" aria-modal="true" aria-label="Детали блюда">
+    <div class="modal-close-wrap">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Закрыть">✕</button>
+    </div>
+    <div class="modal-img-wrap">
+      <div class="modal-img-el" id="modal-img-el"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-top">
+        <h2 class="modal-name" id="modal-name">—</h2>
+        <div class="modal-price-col">
+          <div class="modal-price" id="modal-price">—</div>
+          <div class="modal-orig-price" id="modal-orig-price"></div>
+        </div>
+      </div>
+      <div class="modal-meta" id="modal-meta"></div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="modal-add-row">
+        <div class="qty-sel">
+          <button class="qty-sel-btn" id="modal-minus" aria-label="Уменьшить">−</button>
+          <span class="qty-sel-num" id="modal-qty-num">1</span>
+          <button class="qty-sel-btn" id="modal-plus"  aria-label="Увеличить">+</button>
+        </div>
+        <button class="modal-add-btn" onclick="addFromModal()" id="modal-add-btn">
+          <span data-i18n="modal_add">В корзину</span> · <span id="modal-add-price">—</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       CART DRAWER — Bottom Sheet
+       ════════════════════════════════════════════════════════ -->
+  <div class="drawer-overlay" id="drawer-overlay" role="presentation"></div>
+
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Корзина">
+    <div class="drawer-handle" aria-hidden="true"></div>
+    <div class="drawer-head">
+      <span class="drawer-title">🛒 <span data-i18n="drawer_title">Ваш заказ</span></span>
+      <div style="display:flex; gap: 8px;">
+        <button class="drawer-close-btn" onclick="clearCart()" aria-label="Сбросить корзину" style="width: auto; padding: 0 10px; border-radius: 12px; font-size: 0.8rem;" data-i18n="drawer_clear">Сбросить</button>
+        <button class="drawer-close-btn" onclick="closeDrawer()" aria-label="Закрыть">✕</button>
+      </div>
+    </div>
+    <div class="drawer-items" id="drawer-items" role="list"></div>
+    <div class="drawer-empty" id="drawer-empty">
+      <div class="drawer-empty-icon">🍽️</div>
+      <p data-i18n="drawer_empty">Корзина пуста.<br>Добавьте любимые блюда!</p>
+    </div>
+    <div class="drawer-foot" id="drawer-foot" style="display:none">
+      <div class="order-type-section" style="margin-bottom: 16px;">
+        <label style="font-size: 0.9rem; font-weight: 800; margin-bottom: 8px; display: block;" data-i18n="order_type_label">Способ получения:</label>
+        <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+          <button class="ot-btn active" onclick="setOrderType('takeaway')" id="ot-takeaway" data-i18n="ot_takeaway">С собой</button>
+          <button class="ot-btn" onclick="setOrderType('dinein')" id="ot-dinein" data-i18n="ot_dinein">В заведении</button>
+          <button class="ot-btn" onclick="setOrderType('delivery')" id="ot-delivery" data-i18n="ot_delivery">Доставка</button>
+        </div>
+        <div id="delivery-info" style="display: none; background: rgba(230,57,70,0.08); padding: 10px; border-radius: 8px;">
+          <input type="text" id="delivery-address" placeholder="Ваш адрес..." data-i18n-placeholder="delivery_address" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 8px; font-family: var(--font); font-size: 0.9rem; outline: none;" />
+          <div style="font-size: 0.75rem; color: var(--text-sub); line-height: 1.4;" data-i18n="delivery_warn">
+            ⚠️ Внимание: если адрес не на "Таможне", доставку оплачивает клиент (мы отправим заказ на такси).
+          </div>
+        </div>
+        <div id="dinein-info" style="display: none; font-size: 0.75rem; color: var(--gold); font-weight: 600; margin-top: 4px;" data-i18n="dinein_warn">
+          +12% за обслуживание будет добавлено к сумме
+        </div>
+      </div>
+      <div class="drawer-total-row" id="drawer-container-fee-row" style="display:none; color: var(--text-sub); font-size: 0.85rem; margin-bottom: 6px; padding-top: 10px; border-top: 1px dashed var(--border);">
+        <span class="drawer-total-label" data-i18n="drawer_container_fee">Контейнеры / Коробки</span>
+        <span class="drawer-total-val" id="drawer-container-fee">0 ₸</span>
+      </div>
+      <div class="drawer-total-row">
+        <span class="drawer-total-label" data-i18n="drawer_total_label">Итого:</span>
+        <span class="drawer-total-val" id="drawer-total">0 ₸</span>
+      </div>
+      <button class="wa-btn" onclick="orderViaWhatsApp()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span data-i18n="order_whatsapp">Заказать через WhatsApp</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Наверх" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <!-- Custom Confirm Dialog -->
+  <div class="confirm-overlay" id="confirm-overlay" role="dialog" aria-modal="true" aria-label="Подтверждение">
+    <div class="confirm-box">
+      <div class="confirm-icon">🗑️</div>
+      <div class="confirm-title" id="confirm-title">Очистить корзину?</div>
+      <div class="confirm-msg" id="confirm-msg">Все добавленные блюда будут удалены.</div>
+      <div class="confirm-actions">
+        <button class="confirm-btn cancel" id="confirm-cancel" onclick="hideConfirm()">Отмена</button>
+        <button class="confirm-btn confirm" id="confirm-ok">Очистить</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

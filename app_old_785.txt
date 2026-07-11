@@ -1,0 +1,20 @@
+Created At: 2026-06-29T12:18:38Z
+Completed At: 2026-06-29T12:18:38Z
+File Path: `file:///c:/Users/User0528/Desktop/MARTEBE/app.js`
+Total Lines: 1021
+Total Bytes: 110770
+Showing lines 100 to 140
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+100: 
+101: // ── MENU DATA ─────────────────────────────────────────────────
+102: const MENU = [
+103:   // ЗАВТРАКИ
+104:   { id:101, cat:'breakfasts', name: { ru: 'Рисовая каша', kz: 'Күріш ботқасы', en: 'Rice porridge' },      weight:'250 г',          desc: { ru: 'Нежная рисовая каша на молоке со сливочным маслом.', kz: 'Сары май қосылған сүттегі күріш ботқасы.', en: 'Milk rice porridge with butter.' },  price:900, origPrice:null, img:'images/riceporridge.png',         emoji:'🥣', gradient:['#E0E0E0','#F5F5F5'], rating:95, reviews:10 },
+105:   { id:102, cat:'breakfasts', name: { ru: 'Сосиски вареные', kz: 'Қайнатылған шұжық', en: 'Boiled sausages' },   weight:'200 г',          desc: { ru: 'Горячие классические сосиски (отварные).', kz: 'Ыстық классикалық қайнатылған шұжықтар.', en: 'Hot classic boiled sausages.' },        price:600, origPrice:null, img:'images/варенныйсосиска.png',     emoji:'🌭', gradient:['#E63946','#F18A93'], rating:90, reviews:8 },
+106:   { id:103, cat:'breakfasts', name: { ru: 'Сосиски жареные', kz: 'Қуырылған шұжық', en: 'Fried sausages' },   weight:'200 г',          desc: { ru: 'Сочные сосиски (обжаренные) с хрустящей корочкой.', kz: 'Қытырлақ қабығы бар
+<truncated 16590 bytes>
+озрачный бульон из перепелки.', kz: 'Бөдене етінен жасалған диеталық мөлдір сорпа.', en: 'Dietary clear quail broth.' }, price:1800, origPrice:null, img:'images/Бөдене сорпасы.png', emoji:'🥣', gradient:['#795548','#A1887F'], rating:98, reviews:25 },
+138:   { id:314, cat:'first', name: { ru: 'Суп с тефтелями', kz: 'Тефтели сорпасы', en: 'Meatball soup' }, weight:'350 г', desc: { ru: 'Домашний суп с мясными тефтелями и картофелем.', kz: 'Ет тефтели мен картоп қосылған үй сорпасы.', en: 'Homemade soup with meatballs and potatoes.' }, price:1690, origPrice:null, img:'images/Суп тефтели.png', emoji:'🥣', gradient:['#5D4037','#8D6E63'], rating:95, reviews:33 },
+139:   { id:315, cat:'first', name: { ru: 'Гуйру лагман', kz: 'Гүйру лағман', en: 'Guiru lagman' }, weight:'400 г', desc: { ru: 'Лагман с крупно нарезанным мясом и овощами.', kz: 'Ірі туралған ет пен көкөністер қосылған лағман.', en: 'Lagman with coarsely chopped meat and vegetables.' }, price:1850, origPrice:null, img:'images/лагмангуйру.png', emoji:'🍜', gradient:['#C62828','#EF5350'], rating:96, reviews:60 },
+140:   { id:316, cat:'first', name: { ru: 'Мастава', kz: 'Мастава', en: 'Mastava' }, weight:'350 г', desc: { ru: 'Густой рисовый суп с мясом и овощами.', kz: 'Ет және көкөністер қосылған қою күріш сорпасы.', en: 'Thick rice soup with meat and vegetables.' }, price:1500, origPrice:null, img:'images/мастава.png', emoji:'🥣', gradient:['#E65100','#FFA726'], rating:95, reviews:28 },
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
