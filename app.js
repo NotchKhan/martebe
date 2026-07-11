@@ -4528,8 +4528,9 @@ function showConfirm(title, msg, onConfirm) {
 
   // Bind OK
   okEl.onclick = () => {
+    const cb = confirmCallback;
     hideConfirm();
-    if (confirmCallback) confirmCallback();
+    if (cb) cb();
   };
 
   overlay.classList.add('show');
