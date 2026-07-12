@@ -1,5 +1,8 @@
 {
   "name": "martebe",
   "version": "1.0.0",
-  "description": "MARTEBE - Restaurant App"
+  "description": "MARTEBE - Restaurant App",
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
 }

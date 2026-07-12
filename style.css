@@ -369,8 +369,20 @@ a { touch-action: manipulation; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 
 .card-img-wrap { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--bg); }
-.card-img { width: 100%; height: 100%; background-size: cover; background-position: center; transition: transform 0.3s ease; }
-.food-card:hover .card-img { transform: scale(1.04); }
+.card-img { width: 100%; height: 100%; transition: transform 0.3s ease; position: relative; }
+.card-lazy-img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; opacity: 0; transition: opacity 0.35s ease, transform 0.3s ease; }
+.card-lazy-img.card-img-loaded { opacity: 1; }
+.food-card:hover .card-lazy-img { transform: scale(1.04); }
+/* Skeleton shimmer while loading */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.card-img-skeleton {
+  background: linear-gradient(90deg, var(--surface) 25%, rgba(200,148,58,0.08) 50%, var(--surface) 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.5s infinite linear;
+}
 
 .card-emoji-wrap { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
 .card-emoji { font-size: 3.5rem; filter: drop-shadow(0 3px 10px rgba(0,0,0,0.18)); transition: transform 0.3s ease; }
@@ -418,7 +430,13 @@ a { touch-action: manipulation; }
 
 .promo-item-card { background: var(--surface); border-radius: var(--r-card); overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); cursor: pointer; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; animation: fadeUp 0.3s var(--ease) both; }
 .promo-item-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
-.pic-img { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 3rem; position: relative; }
+.pic-img { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 3rem; position: relative; overflow: hidden; }
+.pic-img img.card-lazy-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pic-img-skeleton {
+  background: linear-gradient(90deg, var(--surface) 25%, rgba(200,148,58,0.08) 50%, var(--surface) 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.5s infinite linear;
+}
 .pic-disc { position: absolute; top: 8px; left: 8px; width: 46px; height: 46px; background: var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 900; color: white; box-shadow: 0 3px 10px rgba(230,57,70,0.45); }
 .pic-body { padding: 10px 12px 14px; }
 .pic-name { font-size: 0.88rem; font-weight: 800; margin-bottom: 6px; line-height: 1.3; }

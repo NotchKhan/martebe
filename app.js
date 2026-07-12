@@ -152,7 +152,7 @@ const MENU = [
     },
     "price": 900,
     "origPrice": null,
-    "img": "images/riceporridge.png",
+    "img": "images/webp/riceporridge.webp",
     "emoji": "🥣",
     "gradient": [
       "#E0E0E0",
@@ -179,7 +179,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/варенныйсосиска.png",
+    "img": "images/webp/варенныйсосиска.webp",
     "emoji": "🌭",
     "gradient": [
       "#E63946",
@@ -206,7 +206,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/sososki.png",
+    "img": "images/webp/sososki.webp",
     "emoji": "🌭",
     "gradient": [
       "#E63946",
@@ -233,7 +233,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/варенныйяйцо.png",
+    "img": "images/webp/варенныйяйцо.webp",
     "emoji": "🥚",
     "gradient": [
       "#F57F17",
@@ -260,7 +260,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/egg.png",
+    "img": "images/webp/egg.webp",
     "emoji": "🍳",
     "gradient": [
       "#F57F17",
@@ -287,7 +287,7 @@ const MENU = [
     },
     "price": 1250,
     "origPrice": null,
-    "img": "images/syrniki.png",
+    "img": "images/webp/syrniki.webp",
     "emoji": "🥞",
     "gradient": [
       "#F4A460",
@@ -314,7 +314,7 @@ const MENU = [
     },
     "price": 1450,
     "origPrice": null,
-    "img": "images/шакшукассыром.png",
+    "img": "images/webp/шакшукассыром.webp",
     "emoji": "🍳",
     "gradient": [
       "#D84315",
@@ -341,7 +341,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/омлетсмоцореллой.png",
+    "img": "images/webp/омлетсмоцореллой.webp",
     "emoji": "🍳",
     "gradient": [
       "#FFB300",
@@ -368,7 +368,7 @@ const MENU = [
     },
     "price": 950,
     "origPrice": null,
-    "img": "images/омлетовощной.png",
+    "img": "images/webp/омлетовощной.webp",
     "emoji": "🍳",
     "gradient": [
       "#4CAF50",
@@ -449,7 +449,7 @@ const MENU = [
     },
     "price": 3000,
     "origPrice": null,
-    "img": "images/мәртебесалаты.png",
+    "img": "images/webp/мәртебесалаты.webp",
     "emoji": "🥗",
     "gradient": [
       "#1B5E20",
@@ -476,7 +476,7 @@ const MENU = [
     },
     "price": 1790,
     "origPrice": null,
-    "img": "images/оливьесмясом4.png",
+    "img": "images/webp/оливьесмясом4.webp",
     "emoji": "🥗",
     "gradient": [
       "#4CAF50",
@@ -503,7 +503,7 @@ const MENU = [
     },
     "price": 1890,
     "origPrice": null,
-    "img": "images/греческий.png",
+    "img": "images/webp/греческий.webp",
     "emoji": "🥗",
     "gradient": [
       "#FF9800",
@@ -530,7 +530,7 @@ const MENU = [
     },
     "price": 1990,
     "origPrice": null,
-    "img": "images/таискийсалат.png",
+    "img": "images/webp/таискийсалат.webp",
     "emoji": "🥗",
     "gradient": [
       "#E64A19",
@@ -557,7 +557,7 @@ const MENU = [
     },
     "price": 1290,
     "origPrice": null,
-    "img": "images/салатачичук.png",
+    "img": "images/webp/салатачичук.webp",
     "emoji": "🍅",
     "gradient": [
       "#D32F2F",
@@ -584,7 +584,7 @@ const MENU = [
     },
     "price": 1490,
     "origPrice": null,
-    "img": "images/свежийсалат.png",
+    "img": "images/webp/свежийсалат.webp",
     "emoji": "🥒",
     "gradient": [
       "#388E3C",
@@ -611,7 +611,7 @@ const MENU = [
     },
     "price": 2450,
     "origPrice": null,
-    "img": "images/салатцезарь.png",
+    "img": "images/webp/салатцезарь.webp",
     "emoji": "🥬",
     "gradient": [
       "#FBC02D",
@@ -638,7 +638,7 @@ const MENU = [
     },
     "price": 1490,
     "origPrice": null,
-    "img": "images/салатмалибу.png",
+    "img": "images/webp/салатмалибу.webp",
     "emoji": "🥗",
     "gradient": [
       "#FFB300",
@@ -665,7 +665,7 @@ const MENU = [
     },
     "price": 1380,
     "origPrice": null,
-    "img": "images/борщ.png",
+    "img": "images/webp/борщ.webp",
     "emoji": "🥣",
     "gradient": [
       "#B71C1C",
@@ -692,7 +692,7 @@ const MENU = [
     },
     "price": 1790,
     "origPrice": null,
-    "img": "images/суйрулагман.png",
+    "img": "images/webp/суйрулагман.webp",
     "emoji": "🍜",
     "gradient": [
       "#D84315",
@@ -719,7 +719,7 @@ const MENU = [
     },
     "price": 2200,
     "origPrice": null,
-    "img": "images/раменсмясом.png",
+    "img": "images/webp/раменсмясом.webp",
     "emoji": "🍜",
     "gradient": [
       "#8D6E63",
@@ -746,7 +746,7 @@ const MENU = [
     },
     "price": 1790,
     "origPrice": null,
-    "img": "images/шурпаизбаранины.png",
+    "img": "images/webp/шурпаизбаранины.webp",
     "emoji": "🥣",
     "gradient": [
       "#795548",
@@ -773,7 +773,7 @@ const MENU = [
     },
     "price": 1450,
     "origPrice": null,
-    "img": "images/пельменисбульоном.png",
+    "img": "images/webp/пельменисбульоном.webp",
     "emoji": "🥣",
     "gradient": [
       "#B71C1C",
@@ -800,7 +800,7 @@ const MENU = [
     },
     "price": 1790,
     "origPrice": null,
-    "img": "images/солянка.png",
+    "img": "images/webp/солянка.webp",
     "emoji": "🥣",
     "gradient": [
       "#D84315",
@@ -827,7 +827,7 @@ const MENU = [
     },
     "price": 1800,
     "origPrice": null,
-    "img": "images/нарын.png",
+    "img": "images/webp/нарын.webp",
     "emoji": "🍜",
     "gradient": [
       "#8D6E63",
@@ -854,7 +854,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/окрошка.png",
+    "img": "images/webp/окрошка.webp",
     "emoji": "🥣",
     "gradient": [
       "#4CAF50",
@@ -881,7 +881,7 @@ const MENU = [
     },
     "price": 1290,
     "origPrice": null,
-    "img": "images/чечевичныйсуп.png",
+    "img": "images/webp/чечевичныйсуп.webp",
     "emoji": "🥣",
     "gradient": [
       "#F57F17",
@@ -908,7 +908,7 @@ const MENU = [
     },
     "price": 1790,
     "origPrice": null,
-    "img": "images/голубцысбульоном.png",
+    "img": "images/webp/голубцысбульоном.webp",
     "emoji": "🍲",
     "gradient": [
       "#388E3C",
@@ -935,7 +935,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/куринныйсуп.png",
+    "img": "images/webp/куринныйсуп.webp",
     "emoji": "🥣",
     "gradient": [
       "#FFB300",
@@ -962,7 +962,7 @@ const MENU = [
     },
     "price": 1390,
     "origPrice": null,
-    "img": "images/раменскурицой.png",
+    "img": "images/webp/раменскурицой.webp",
     "emoji": "🍜",
     "gradient": [
       "#E64A19",
@@ -1043,7 +1043,7 @@ const MENU = [
     },
     "price": 1850,
     "origPrice": null,
-    "img": "images/лагмангуйру.png",
+    "img": "images/webp/лагмангуйру.webp",
     "emoji": "🍜",
     "gradient": [
       "#C62828",
@@ -1070,7 +1070,7 @@ const MENU = [
     },
     "price": 1500,
     "origPrice": null,
-    "img": "images/мастава.png",
+    "img": "images/webp/мастава.webp",
     "emoji": "🥣",
     "gradient": [
       "#E65100",
@@ -1097,7 +1097,7 @@ const MENU = [
     },
     "price": 1890,
     "origPrice": null,
-    "img": "images/манты.png",
+    "img": "images/webp/манты.webp",
     "emoji": "🥟",
     "gradient": [
       "#5C3317",
@@ -1124,7 +1124,7 @@ const MENU = [
     },
     "price": 3490,
     "origPrice": null,
-    "img": "images/казанкебаб.png",
+    "img": "images/webp/казанкебаб.webp",
     "emoji": "🥩",
     "gradient": [
       "#4A1010",
@@ -1151,7 +1151,7 @@ const MENU = [
     },
     "price": 2100,
     "origPrice": null,
-    "img": "images/пастаальфредо.png",
+    "img": "images/webp/пастаальфредо.webp",
     "emoji": "🍝",
     "gradient": [
       "#FFB300",
@@ -1178,7 +1178,7 @@ const MENU = [
     },
     "price": 2950,
     "origPrice": null,
-    "img": "images/бешбармак.png",
+    "img": "images/webp/бешбармак.webp",
     "emoji": "🍲",
     "gradient": [
       "#1A237E",
@@ -1205,7 +1205,7 @@ const MENU = [
     },
     "price": 2190,
     "origPrice": null,
-    "img": "images/долма.png",
+    "img": "images/webp/долма.webp",
     "emoji": "🍲",
     "gradient": [
       "#2E7D32",
@@ -1232,7 +1232,7 @@ const MENU = [
     },
     "price": 3490,
     "origPrice": null,
-    "img": "images/куырдакизконины.png",
+    "img": "images/webp/куырдакизконины.webp",
     "emoji": "🥘",
     "gradient": [
       "#4A148C",
@@ -1259,7 +1259,7 @@ const MENU = [
     },
     "price": 2300,
     "origPrice": null,
-    "img": "images/курицавкислосладкомсоусе.png",
+    "img": "images/webp/курицавкислосладкомсоусе.webp",
     "emoji": "🍗",
     "gradient": [
       "#D84315",
@@ -1286,7 +1286,7 @@ const MENU = [
     },
     "price": 2200,
     "origPrice": null,
-    "img": "images/курицасгрибами2.png",
+    "img": "images/webp/курицасгрибами2.webp",
     "emoji": "🍗",
     "gradient": [
       "#795548",
@@ -1313,7 +1313,7 @@ const MENU = [
     },
     "price": 1590,
     "origPrice": null,
-    "img": "images/пловташкентский.png",
+    "img": "images/webp/пловташкентский.webp",
     "emoji": "🍛",
     "gradient": [
       "#E65100",
@@ -1340,7 +1340,7 @@ const MENU = [
     },
     "price": 2290,
     "origPrice": null,
-    "img": "images/табака.png",
+    "img": "images/webp/табака.webp",
     "emoji": "🍗",
     "gradient": [
       "#BF360C",
@@ -1367,7 +1367,7 @@ const MENU = [
     },
     "price": 3190,
     "origPrice": null,
-    "img": "images/тушенкосрисом.png",
+    "img": "images/webp/тушенкосрисом.webp",
     "emoji": "🍲",
     "gradient": [
       "#5D4037",
@@ -1421,7 +1421,7 @@ const MENU = [
     },
     "price": 2690,
     "origPrice": null,
-    "img": "images/пицца4сезона.png",
+    "img": "images/webp/пицца4сезона.webp",
     "emoji": "🍕",
     "gradient": [
       "#D84315",
@@ -1448,7 +1448,7 @@ const MENU = [
     },
     "price": 2390,
     "origPrice": null,
-    "img": "images/пепперони.png",
+    "img": "images/webp/пепперони.webp",
     "emoji": "🍕",
     "gradient": [
       "#C62828",
@@ -1475,7 +1475,7 @@ const MENU = [
     },
     "price": 2790,
     "origPrice": null,
-    "img": "images/пиццамәртебе.png",
+    "img": "images/webp/пиццамәртебе.webp",
     "emoji": "🍕",
     "gradient": [
       "#1B5E20",
@@ -1502,7 +1502,7 @@ const MENU = [
     },
     "price": 2290,
     "origPrice": null,
-    "img": "images/куринаяпицца.png",
+    "img": "images/webp/куринаяпицца.webp",
     "emoji": "🍕",
     "gradient": [
       "#F9A825",
@@ -1529,7 +1529,7 @@ const MENU = [
     },
     "price": 2090,
     "origPrice": null,
-    "img": "images/маргарита.png",
+    "img": "images/webp/маргарита.webp",
     "emoji": "🍕",
     "gradient": [
       "#E53935",
@@ -1556,7 +1556,7 @@ const MENU = [
     },
     "price": 3690,
     "origPrice": null,
-    "img": "images/пиицаказахсктан.png",
+    "img": "images/webp/пиицаказахсктан.webp",
     "emoji": "🍕",
     "gradient": [
       "#1E88E5",
@@ -1583,7 +1583,7 @@ const MENU = [
     },
     "price": 2690,
     "origPrice": null,
-    "img": "images/курицасгрибами.png",
+    "img": "images/webp/курицасгрибами.webp",
     "emoji": "🍕",
     "gradient": [
       "#8D6E63",
@@ -1610,7 +1610,7 @@ const MENU = [
     },
     "price": 1490,
     "origPrice": null,
-    "img": "images/пидессыром.png",
+    "img": "images/webp/пидессыром.webp",
     "emoji": "🧀",
     "gradient": [
       "#FFCA28",
@@ -1637,7 +1637,7 @@ const MENU = [
     },
     "price": 1790,
     "origPrice": null,
-    "img": "images/пидесмясом.png",
+    "img": "images/webp/пидесмясом.webp",
     "emoji": "🥩",
     "gradient": [
       "#8D6E63",
@@ -1664,7 +1664,7 @@ const MENU = [
     },
     "price": 900,
     "origPrice": null,
-    "img": "images/картофельныедольки.png",
+    "img": "images/webp/картофельныедольки.webp",
     "emoji": "🥔",
     "gradient": [
       "#FFB300",
@@ -1691,7 +1691,7 @@ const MENU = [
     },
     "price": 700,
     "origPrice": null,
-    "img": "images/картошкафри.png",
+    "img": "images/webp/картошкафри.webp",
     "emoji": "🍟",
     "gradient": [
       "#F57F17",
@@ -1718,7 +1718,7 @@ const MENU = [
     },
     "price": 1300,
     "origPrice": null,
-    "img": "images/бургер.png",
+    "img": "images/webp/бургер.webp",
     "emoji": "🍔",
     "gradient": [
       "#F57F17",
@@ -1745,7 +1745,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/бургеркуринный.png",
+    "img": "images/webp/бургеркуринный.webp",
     "emoji": "🍔",
     "gradient": [
       "#FFB300",
@@ -1772,7 +1772,7 @@ const MENU = [
     },
     "price": 1800,
     "origPrice": null,
-    "img": "images/даблбургер.png",
+    "img": "images/webp/даблбургер.webp",
     "emoji": "🍔",
     "gradient": [
       "#E65100",
@@ -1799,7 +1799,7 @@ const MENU = [
     },
     "price": 1490,
     "origPrice": null,
-    "img": "images/чизбургер.png",
+    "img": "images/webp/чизбургер.webp",
     "emoji": "🍔",
     "gradient": [
       "#FF8F00",
@@ -1826,7 +1826,7 @@ const MENU = [
     },
     "price": 1390,
     "origPrice": null,
-    "img": "images/куринныйчизбургер.png",
+    "img": "images/webp/куринныйчизбургер.webp",
     "emoji": "🍔",
     "gradient": [
       "#F9A825",
@@ -1853,7 +1853,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/клабсендвич.png",
+    "img": "images/webp/клабсендвич.webp",
     "emoji": "🥪",
     "gradient": [
       "#D84315",
@@ -1880,7 +1880,7 @@ const MENU = [
     },
     "price": 1290,
     "origPrice": null,
-    "img": "images/лавашкуринный.png",
+    "img": "images/webp/лавашкуринный.webp",
     "emoji": "🌯",
     "gradient": [
       "#EF6C00",
@@ -1907,7 +1907,7 @@ const MENU = [
     },
     "price": 1690,
     "origPrice": null,
-    "img": "images/лавашшашлык.png",
+    "img": "images/webp/лавашшашлык.webp",
     "emoji": "🌯",
     "gradient": [
       "#8D6E63",
@@ -1961,7 +1961,7 @@ const MENU = [
     },
     "price": 1590,
     "origPrice": null,
-    "img": "images/тандырлаваш.png",
+    "img": "images/webp/тандырлаваш.webp",
     "emoji": "🥙",
     "gradient": [
       "#5D4037",
@@ -1988,7 +1988,7 @@ const MENU = [
     },
     "price": 890,
     "origPrice": null,
-    "img": "images/хотдог.jpg",
+    "img": "images/webp/хотдог.webp",
     "emoji": "🌭",
     "gradient": [
       "#D32F2F",
@@ -2042,7 +2042,7 @@ const MENU = [
     },
     "price": 4900,
     "origPrice": null,
-    "img": "images/рибай.png",
+    "img": "images/webp/рибай.webp",
     "emoji": "🥩",
     "gradient": [
       "#5D4037",
@@ -2069,7 +2069,7 @@ const MENU = [
     },
     "price": 2800,
     "origPrice": null,
-    "img": "images/мясноймедальон.png",
+    "img": "images/webp/мясноймедальон.webp",
     "emoji": "🥩",
     "gradient": [
       "#4E342E",
@@ -2096,7 +2096,7 @@ const MENU = [
     },
     "price": 2690,
     "origPrice": null,
-    "img": "images/куринныймедальон.png",
+    "img": "images/webp/куринныймедальон.webp",
     "emoji": "🍗",
     "gradient": [
       "#FFB300",
@@ -2123,7 +2123,7 @@ const MENU = [
     },
     "price": 1300,
     "origPrice": null,
-    "img": "images/крылишкишашлык.png",
+    "img": "images/webp/крылишкишашлык.webp",
     "emoji": "🍗",
     "gradient": [
       "#E64A19",
@@ -2177,7 +2177,7 @@ const MENU = [
     },
     "price": 1250,
     "origPrice": null,
-    "img": "images/кусковойбаранина.png",
+    "img": "images/webp/кусковойбаранина.webp",
     "emoji": "🥩",
     "gradient": [
       "#5D4037",
@@ -2204,7 +2204,7 @@ const MENU = [
     },
     "price": 990,
     "origPrice": null,
-    "img": "images/молотый.png",
+    "img": "images/webp/молотый.webp",
     "emoji": "🥩",
     "gradient": [
       "#4E342E",
@@ -2231,7 +2231,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/овощнойшашлык.png",
+    "img": "images/webp/овощнойшашлык.webp",
     "emoji": "🍆",
     "gradient": [
       "#388E3C",
@@ -2285,7 +2285,7 @@ const MENU = [
     },
     "price": 350,
     "origPrice": null,
-    "img": "images/стручковыйперец.png",
+    "img": "images/webp/стручковыйперец.webp",
     "emoji": "🌶️",
     "gradient": [
       "#D32F2F",
@@ -2312,7 +2312,7 @@ const MENU = [
     },
     "price": 250,
     "origPrice": null,
-    "img": "images/аджика.png",
+    "img": "images/webp/аджика.webp",
     "emoji": "🍅",
     "gradient": [
       "#C62828",
@@ -2339,7 +2339,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/чесночныйсоус.png",
+    "img": "images/webp/чесночныйсоус.webp",
     "emoji": "🧄",
     "gradient": [
       "#F5F5F5",
@@ -2366,7 +2366,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/сырныйсоус.png",
+    "img": "images/webp/сырныйсоус.webp",
     "emoji": "🧀",
     "gradient": [
       "#FFB300",
@@ -2393,7 +2393,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/майонез.png",
+    "img": "images/webp/майонез.webp",
     "emoji": "🥚",
     "gradient": [
       "#FFFFFF",
@@ -2420,7 +2420,7 @@ const MENU = [
     },
     "price": 300,
     "origPrice": null,
-    "img": "images/кетчуп.png",
+    "img": "images/webp/кетчуп.webp",
     "emoji": "🍅",
     "gradient": [
       "#D84315",
@@ -2447,7 +2447,7 @@ const MENU = [
     },
     "price": 550,
     "origPrice": null,
-    "img": "images/рис.png",
+    "img": "images/webp/рис.webp",
     "emoji": "🍚",
     "gradient": [
       "#FFFFFF",
@@ -2474,7 +2474,7 @@ const MENU = [
     },
     "price": 500,
     "origPrice": null,
-    "img": "images/пюре.png",
+    "img": "images/webp/пюре.webp",
     "emoji": "🥔",
     "gradient": [
       "#FFF59D",
@@ -3144,7 +3144,7 @@ const MENU = [
     },
     "price": 200,
     "origPrice": null,
-    "img": "images/водабезгаза0,5.jpg",
+    "img": "images/webp/водабезгаза0,5.webp",
     "emoji": "💧",
     "gradient": [
       "#FFFFFF",
@@ -3171,7 +3171,7 @@ const MENU = [
     },
     "price": 490,
     "origPrice": null,
-    "img": "images/водабезгаза1л.jpg",
+    "img": "images/webp/водабезгаза1л.webp",
     "emoji": "💧",
     "gradient": [
       "#FFFFFF",
@@ -3198,7 +3198,7 @@ const MENU = [
     },
     "price": 350,
     "origPrice": null,
-    "img": "images/газированнаявода.jpg",
+    "img": "images/webp/газированнаявода.webp",
     "emoji": "💧",
     "gradient": [
       "#FFFFFF",
@@ -3225,7 +3225,7 @@ const MENU = [
     },
     "price": 400,
     "origPrice": null,
-    "img": "images/каркаде0,5.png",
+    "img": "images/webp/каркаде0,5.webp",
     "emoji": "🍹",
     "gradient": [
       "#FFFFFF",
@@ -3252,7 +3252,7 @@ const MENU = [
     },
     "price": 700,
     "origPrice": null,
-    "img": "images/каркаде1л.png",
+    "img": "images/webp/каркаде1л.webp",
     "emoji": "🍹",
     "gradient": [
       "#FFFFFF",
@@ -3279,7 +3279,7 @@ const MENU = [
     },
     "price": 500,
     "origPrice": null,
-    "img": "images/коже.png",
+    "img": "images/webp/коже.webp",
     "emoji": "🥛",
     "gradient": [
       "#FFFFFF",
@@ -3306,7 +3306,7 @@ const MENU = [
     },
     "price": 500,
     "origPrice": null,
-    "img": "images/колажбанка.jpg",
+    "img": "images/webp/колажбанка.webp",
     "emoji": "🥤",
     "gradient": [
       "#F44336",
@@ -3333,7 +3333,7 @@ const MENU = [
     },
     "price": 700,
     "origPrice": null,
-    "img": "images/коланаразлив.jpg",
+    "img": "images/webp/коланаразлив.webp",
     "emoji": "🥤",
     "gradient": [
       "#FFFFFF",
@@ -3360,7 +3360,7 @@ const MENU = [
     },
     "price": 600,
     "origPrice": null,
-    "img": "images/колавстекле.jpg",
+    "img": "images/webp/колавстекле.webp",
     "emoji": "🍾",
     "gradient": [
       "#FFFFFF",
@@ -3387,7 +3387,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/сокпико1.jpg",
+    "img": "images/webp/сокпико1.webp",
     "emoji": "🧃",
     "gradient": [
       "#4CAF50",
@@ -3414,7 +3414,7 @@ const MENU = [
     },
     "price": 500,
     "origPrice": null,
-    "img": "images/fusetea0.5.jpg",
+    "img": "images/webp/fusetea0.5.webp",
     "emoji": "🧃",
     "gradient": [
       "#FFEB3B",
@@ -3441,7 +3441,7 @@ const MENU = [
     },
     "price": 890,
     "origPrice": null,
-    "img": "images/fusetea1.jpg",
+    "img": "images/webp/fusetea1.webp",
     "emoji": "🧃",
     "gradient": [
       "#FFEB3B",
@@ -3468,7 +3468,7 @@ const MENU = [
     },
     "price": 600,
     "origPrice": null,
-    "img": "images/коланольпять.jpg",
+    "img": "images/webp/коланольпять.webp",
     "emoji": "🥤",
     "gradient": [
       "#D32F2F",
@@ -3481,75 +3481,46 @@ const MENU = [
     "id": 1115,
     "cat": "drinks",
     "name": {
-      "ru": "Fanta 0.5 л",
-      "kz": "Fanta 0.5 л",
-      "en": "Fanta 0.5L",
-      "zh": "芬达 0.5升"
-    },
-    "weight": "0.5 л",
-    "desc": {
-      "ru": "Освежающий напиток.",
-      "kz": "Сергітетін сусын.",
-      "en": "Refreshing drink.",
-      "zh": "芬达橙味饮料 0.5升。"
-    },
-    "price": 600,
-    "origPrice": null,
-    "img": "images/фантанольпять.jpg",
-    "emoji": "🥤",
-    "gradient": [
-      "#FF9800",
-      "#F57F17"
-    ],
-    "rating": 95,
-    "reviews": 10
-  },
-  {
-    "id": 1116,
-    "cat": "drinks",
-    "name": {
-      "ru": "Sprite 0.5 л",
-      "kz": "Sprite 0.5 л",
-      "en": "Sprite 0.5L",
-      "zh": "雪碧 0.5升"
-    },
-    "weight": "0.5 л",
-    "desc": {
-      "ru": "Освежающий напиток.",
-      "kz": "Сергітетін сусын.",
-      "en": "Refreshing drink.",
-      "zh": "雪碧柠檬味 0.5升。"
-    },
-    "price": 600,
-    "origPrice": null,
-    "img": "images/спрайт0,5.png",
-    "emoji": "🥤",
-    "gradient": [
-      "#8BC34A",
-      "#689F38"
-    ],
-    "rating": 95,
-    "reviews": 10
-  },
-  {
-    "id": 1117,
-    "cat": "drinks",
-    "name": {
-      "ru": "Coca-Cola 1 л",
-      "kz": "Coca-Cola 1 л",
-      "en": "Coca-Cola 1L",
-      "zh": "可口可乐 1升"
-    },
-    "weight": "1 л",
-    "desc": {
-      "ru": "Освежающий напиток.",
-      "kz": "Сергітетін сусын.",
-      "en": "Refreshing drink.",
-      "zh": "经典可口可乐 1升。"
-    },
-    "price": 890,
-    "origPrice": null,
-    "img": "images/кола1л.jpg",
+      grid.style.display = '';
+  grid.innerHTML = items.map((item, idx) => {
+    const disc = item.origPrice ? Math.round((1 - item.price / item.origPrice) * 100) : null;
+    // Use real <img> with loading=lazy for first 4 (visible), rest use IntersectionObserver
+    const isEager = idx < 4;
+    const imgHtml = item.img
+      ? `<div class="card-img card-img-skeleton">
+           <img class="card-lazy-img${isEager ? ' card-img-eager' : ''}" 
+                ${isEager ? `src="${item.img}"` : `data-src="${item.img}"`}
+                alt="${item.name[currentLang]}" 
+                loading="${isEager ? 'eager' : 'lazy'}"
+                decoding="async"
+                width="200" height="160"
+                onload="this.parentNode.classList.remove('card-img-skeleton');this.classList.add('card-img-loaded')">
+         </div>`
+      : `<div class="card-emoji-wrap" style="background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})">
+           <span class="card-emoji">${item.emoji}</span>
+         </div>`;
+    return `
+      <div class="food-card" onclick="openModal(${item.id})"
+           style="animation-delay:${Math.min(idx,8)*0.05}s" role="listitem">
+        <div class="card-img-wrap">
+          ${imgHtml}
+          ${disc ? `<div class="card-disc-badge">-${disc}%</div>` : (item.isHit ? `<div class="card-hit-badge">HIT</div>` : (item.isNew ? `<div class="card-new-badge">NEW</div>` : ''))}
+          <div class="card-ctrl-slot" data-cid="${item.id}">${cardCtrlHtml(item.id)}</div>
+        </div>
+        <div class="card-body">
+          <div class="card-price-row">
+            <span class="card-price">${item.price.toLocaleString('ru-RU')} ₸</span>
+            ${item.origPrice ? `<span class="card-orig">${item.origPrice.toLocaleString('ru-RU')} ₸</span>` : ''}
+          </div>
+          <div class="card-name">${item.name[currentLang]}</div>
+          ${item.rating ? `<div class="card-rating">${'⭐'.repeat(Math.round(item.rating/20))} <span style="color:var(--text-muted);font-size:0.7rem">(${item.reviews})</span></div>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+  // Activate IntersectionObserver for lazy images
+  initLazyImages();
+}: null,
+    "img": "images/webp/кола1л.webp",
     "emoji": "🥤",
     "gradient": [
       "#D32F2F",
@@ -3576,7 +3547,7 @@ const MENU = [
     },
     "price": 890,
     "origPrice": null,
-    "img": "images/фанта1л.jpg",
+    "img": "images/webp/фанта1л.webp",
     "emoji": "🥤",
     "gradient": [
       "#FF9800",
@@ -3603,7 +3574,7 @@ const MENU = [
     },
     "price": 890,
     "origPrice": null,
-    "img": "images/спрайт1л.png",
+    "img": "images/webp/спрайт1л.webp",
     "emoji": "🥤",
     "gradient": [
       "#8BC34A",
@@ -3630,7 +3601,7 @@ const MENU = [
     },
     "price": 2900,
     "origPrice": 3300,
-    "img": "images/food_combo1.jpg",
+    "img": "images/webp/food_combo1.webp",
     "emoji": "🥘",
     "gradient": [
       "#1A237E",
@@ -3657,7 +3628,7 @@ const MENU = [
     },
     "price": 2500,
     "origPrice": null,
-    "img": "images/food_beshbarmak.jpg",
+    "img": "images/webp/food_beshbarmak.webp",
     "emoji": "🥘",
     "gradient": [
       "#6B2121",
@@ -3684,7 +3655,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/food_manti.jpg",
+    "img": "images/webp/food_manti.webp",
     "emoji": "🥟",
     "gradient": [
       "#5C3317",
@@ -3702,9 +3673,9 @@ const PROMOS = [
 ];
 
 const CABINS = [
-  { id: 1, name: { ru: 'Караоке зона для компании', kz: 'Компанияға арналған караоке аймағы', en: 'Karaoke zone for groups', zh: '团体卡拉OK区' }, desc: { ru: 'Удобная и просторная кабинка для праздников с караоке', kz: 'Караокесі бар мерекелерге арналған ыңғайлы әрі кең кабина', en: 'Comfortable and spacious cabin for holidays with karaoke', zh: '舒适宽敞的卡拉OK度假舱' }, capacity: { ru: 'до 16 человек', kz: '16 адамға дейін', en: 'up to 16 people', zh: '最多16人' }, img: 'images/кабинка1.png' },
-  { id: 2, name: { ru: 'Казахская кабинка', kz: 'Қазақ кабинасы', en: 'Kazakh cabin', zh: '哈萨克包间' }, desc: { ru: 'Традиционная кабинка в стиле топчана с корпеше и подушками, чтобы отдохнуть и почувствовать себя как в юрте.', kz: 'Демалып, өзіңізді киіз үйдегідей сезіну үшін көрпешелер мен жастықтары бар тапшан стиліндегі дәстүрлі кабина.', en: 'Traditional tapshan-style cabin with bedding and pillows to relax and feel like in a yurt.', zh: '传统的塔普山风格包间，配有床上用品和枕头，让您放松身心，感觉就像在蒙古包里一样。' }, capacity: { ru: '12 человек', kz: '12 адам', en: '12 people', zh: '12人' }, img: 'images/кабинка2.png' },
-  { id: 3, name: { ru: 'ВИП караоке зона', kz: 'VIP караоке аймағы', en: 'VIP karaoke zone', zh: 'VIP卡拉OK区' }, desc: { ru: 'Уютное идеальное место, чтобы повеселиться, поговорить по душам и попеть.', kz: 'Көңіл көтеруге, шын жүректен сөйлесуге және ән айтуға арналған жайлы тамаша орын.', en: 'Cozy and perfect place to have fun, have heart-to-heart talks, and sing.', zh: '舒适完美的聚会场所，适合尽情欢乐、畅所欲言和唱歌。' }, capacity: { ru: 'до 10 человек', kz: '10 адамға дейін', en: 'up to 10 people', zh: '最多10人' }, img: 'images/кабинка3.png' }
+  { id: 1, name: { ru: 'Караоке зона для компании', kz: 'Компанияға арналған караоке аймағы', en: 'Karaoke zone for groups', zh: '团体卡拉OK区' }, desc: { ru: 'Удобная и просторная кабинка для праздников с караоке', kz: 'Караокесі бар мерекелерге арналған ыңғайлы әрі кең кабина', en: 'Comfortable and spacious cabin for holidays with karaoke', zh: '舒适宽敞的卡拉OK度假舱' }, capacity: { ru: 'до 16 человек', kz: '16 адамға дейін', en: 'up to 16 people', zh: '最多16人' }, img: 'images/webp/кабинка1.webp' },
+  { id: 2, name: { ru: 'Казахская кабинка', kz: 'Қазақ кабинасы', en: 'Kazakh cabin', zh: '哈萨克包间' }, desc: { ru: 'Традиционная кабинка в стиле топчана с корпеше и подушками, чтобы отдохнуть и почувствовать себя как в юрте.', kz: 'Демалып, өзіңізді киіз үйдегідей сезіну үшін көрпешелер мен жастықтары бар тапшан стиліндегі дәстүрлі кабина.', en: 'Traditional tapshan-style cabin with bedding and pillows to relax and feel like in a yurt.', zh: '传统的塔普山风格包间，配有床上用品和枕头，让您放松身心，感觉就像在蒙古包里一样。' }, capacity: { ru: '12 человек', kz: '12 адам', en: '12 people', zh: '12人' }, img: 'images/webp/кабинка2.webp' },
+  { id: 3, name: { ru: 'ВИП караоке зона', kz: 'VIP караоке аймағы', en: 'VIP karaoke zone', zh: 'VIP卡拉OK区' }, desc: { ru: 'Уютное идеальное место, чтобы повеселиться, поговорить по душам и попеть.', kz: 'Көңіл көтеруге, шын жүректен сөйлесуге және ән айтуға арналған жайлы тамаша орын.', en: 'Cozy and perfect place to have fun, have heart-to-heart talks, and sing.', zh: '舒适完美的聚会场所，适合尽情欢乐、畅所欲言和唱歌。' }, capacity: { ru: 'до 10 человек', kz: '10 адамға дейін', en: 'up to 10 people', zh: '最多10人' }, img: 'images/webp/кабинка3.webp' }
 ];
 
 // ============================================================
@@ -4061,21 +4032,7 @@ function renderHome() {
       <div class="pop-chip" onclick="openModal(${item.id})">
         <div class="pop-chip-img"
              style="${item.img
-               ? `background-image:url('${item.img}');background-size:cover;background-position:center`
-               : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`}">
-          ${!item.img ? `<span style="font-size:3rem">${item.emoji}</span>` : ''}
-          <div class="card-ctrl-slot" data-cid="${item.id}">${cardCtrlHtml(item.id)}</div>
-        </div>
-        <div class="pop-chip-body">
-          <div class="pop-chip-price">${item.price.toLocaleString('ru-RU')} ₸</div>
-          <div class="pop-chip-name">${item.name[currentLang]}</div>
-        </div>
-      </div>`).join('');
-  }
-}
-
-// ── Promo ticker ────────────────────────────────────────────
-function showPromo(idx) {
+               ? null
   promoIdx = (idx + PROMOS.length) % PROMOS.length;
   const p = PROMOS[promoIdx];
   const card = document.getElementById('promo-slide-card');
@@ -4151,7 +4108,7 @@ function renderGrid(query = '') {
   grid.innerHTML = items.map((item, idx) => {
     const disc = item.origPrice ? Math.round((1 - item.price / item.origPrice) * 100) : null;
     const imgHtml = item.img
-      ? `<div class="card-img" style="background-image:url('${item.img}')"></div>`
+      ? `<div class="card-img card-img-skeleton"><img class="card-lazy-img${idx<4?' card-img-eager':''}" ${idx<4?`src="${item.img}"`:`data-src="${item.img}"`} alt="${item.name[currentLang]}" loading="${idx<4?'eager':'lazy'}" decoding="async" width="200" height="160" onload="this.parentNode.classList.remove('card-img-skeleton');this.classList.add('card-img-loaded')"></div>`
       : `<div class="card-emoji-wrap" style="background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})">
            <span class="card-emoji">${item.emoji}</span>
          </div>`;
@@ -4203,14 +4160,14 @@ function renderPromos() {
   grid.innerHTML = items.map((item, idx) => {
     const pct  = item.origPrice ? Math.round((1 - item.price / item.origPrice) * 100) : 15;
     const save = item.origPrice ? (item.origPrice - item.price) : null;
-    const imgStyle = item.img
-      ? `background-image:url('${item.img}');background-size:cover;background-position:center`
-      : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
     return `
       <div class="promo-item-card" onclick="openModal(${item.id})"
            style="animation-delay:${Math.min(idx,8)*0.05}s">
-        <div class="pic-img" style="${imgStyle}">
-          ${!item.img ? `<span style="font-size:3rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.2))">${item.emoji}</span>` : ''}
+        <div class="pic-img pic-img-skeleton" ${!item.img ? `style="background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})"` : ''}>
+          ${item.img
+            ? `<img class="card-lazy-img" data-src="${item.img}" alt="${item.name[currentLang]}" loading="lazy" decoding="async" width="200" height="150" onload="this.parentNode.classList.remove('pic-img-skeleton');this.classList.add('card-img-loaded')">`
+            : `<span style="font-size:3rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.2))">${item.emoji}</span>`
+          }
           <div class="pic-disc">-${pct}%</div>
         </div>
         <div class="pic-body">
@@ -4226,6 +4183,7 @@ function renderPromos() {
         </div>
       </div>`;
   }).join('');
+  initLazyImages();
 }
 
 // ============================================================
@@ -4262,14 +4220,13 @@ function openModal(id) {
 
   const imgEl = document.getElementById('modal-img-el');
   if (item.img) {
-    imgEl.style.background      = 'var(--bg)';
-    imgEl.style.backgroundImage = `url('${item.img}')`;
-    imgEl.style.backgroundSize  = 'cover';
-    imgEl.style.backgroundPosition = 'center';
-    imgEl.innerHTML = '';
+    imgEl.style.background = 'var(--bg)';
+    imgEl.style.backgroundImage = 'none';
+    // Use <img> so browser reuses already-cached WebP from card grid
+    imgEl.innerHTML = `<img src="${item.img}" alt="${item.name[currentLang]}" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">`;
   } else {
     imgEl.style.backgroundImage = 'none';
-    imgEl.style.background      = `linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
+    imgEl.style.background = `linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
     imgEl.innerHTML = `<span class="modal-emoji-big">${item.emoji}</span>`;
   }
 
@@ -4356,12 +4313,9 @@ function renderDrawerItems() {
   footEl.style.display  = 'block';
 
   container.innerHTML = cart.map(item => {
-    const iStyle = item.img
-      ? `background-image:url('${item.img}');background-size:cover;background-position:center`
-      : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
     return `
       <div class="drawer-item">
-        <div class="di-img" style="${iStyle}">${!item.img ? item.emoji : ''}</div>
+        <div class="di-img" style="${item.img ? '' : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`}">${item.img ? `<img src="${item.img}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">` : item.emoji}</div>
         <div class="di-info">
           <div class="di-name">${item.name[currentLang] || item.name}</div>
           <div class="di-price">${item.price.toLocaleString('ru-RU')} ₸</div>
@@ -4604,6 +4558,54 @@ function updateTrustSection() {
 }
 
 // ============================================================
+//  LAZY IMAGE LOADER  (IntersectionObserver)
+// ============================================================
+let _lazyObserver = null;
+
+function initLazyImages() {
+  // Find all images with data-src (not yet loaded)
+  const lazyImgs = document.querySelectorAll('img.card-lazy-img[data-src]');
+  if (!lazyImgs.length) return;
+
+  if (!_lazyObserver) {
+    _lazyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          const src = img.dataset.src;
+          if (src) {
+            img.src = src;
+            delete img.dataset.src;
+          }
+          _lazyObserver.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '200px 0px', // Start loading 200px before entering viewport
+      threshold: 0
+    });
+  }
+
+  lazyImgs.forEach(img => _lazyObserver.observe(img));
+}
+
+// Preload modal image for fast display
+const _imgCache = new Map();
+function preloadImage(src) {
+  if (!src || _imgCache.has(src)) return;
+  const img = new Image();
+  img.src = src;
+  _imgCache.set(src, img);
+}
+
+// Preload images for all currently visible cards (called after rendering)
+function preloadVisibleCardImages() {
+  document.querySelectorAll('.card-lazy-img.card-img-eager').forEach(img => {
+    if (img.src) preloadImage(img.src);
+  });
+}
+
+// ============================================================
 //  INIT
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -4648,4 +4650,25 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { closeModal(); closeDrawer(); closeSearch(); hideConfirm(); }
   });
+
+  // Hover/touchstart preload: load modal image before user taps
+  document.addEventListener('mouseover', e => {
+    const card = e.target.closest('.food-card, .menu-list-item, .promo-item-card, .pop-chip');
+    if (!card) return;
+    const onclick = card.getAttribute('onclick') || '';
+    const match = onclick.match(/openModal\((\d+)\)/);
+    if (!match) return;
+    const item = MENU.find(m => m.id === parseInt(match[1]));
+    if (item && item.img) preloadImage(item.img);
+  }, { passive: true });
+
+  document.addEventListener('touchstart', e => {
+    const card = e.target.closest('.food-card, .menu-list-item, .promo-item-card, .pop-chip');
+    if (!card) return;
+    const onclick = card.getAttribute('onclick') || '';
+    const match = onclick.match(/openModal\((\d+)\)/);
+    if (!match) return;
+    const item = MENU.find(m => m.id === parseInt(match[1]));
+    if (item && item.img) preloadImage(item.img);
+  }, { passive: true });
 });
