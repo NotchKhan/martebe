@@ -369,7 +369,7 @@ a { touch-action: manipulation; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 
 .card-img-wrap { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--bg); }
-.card-img { width: 100%; height: 100%; transition: transform 0.3s ease; position: relative; }
+.card-img { width: 100%; height: 100%; transition: transform 0.3s ease; position: relative; background-size: cover; background-position: center; }
 .card-lazy-img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; opacity: 0; transition: opacity 0.35s ease, transform 0.3s ease; }
 .card-lazy-img.card-img-loaded { opacity: 1; }
 .food-card:hover .card-lazy-img { transform: scale(1.04); }
