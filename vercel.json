@@ -3,7 +3,7 @@
   "outputDirectory": ".",
   "framework": null,
   "rewrites": [
-    { "source": "/(.*)\\.html", "destination": "/index.html" }
+    { "source": "/(.*).html", "destination": "/index.html" }
   ],
   "headers": [
     {
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "source": "/images/(.*\\.(jpg|jpeg|png))",
+      "source": "/images/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
@@ -22,13 +22,13 @@
     {
       "source": "/app.js",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
       ]
     },
     {
       "source": "/style.css",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
       ]
     }
   ]
