@@ -83,10 +83,9 @@ const I18N = {
   // Promos add button
   promo_add_btn:      { ru: '+ В корзину', kz: '+ Себетке', en: '+ Add', zh: '+ 加入' },
   drawer_container_fee: { ru: 'Контейнеры / Коробки', kz: 'Контейнерлер / Қораптар', en: 'Containers / Boxes', zh: '容器/盒子' },
-  table_number_label:   { ru: 'Номер стола (необязательно):', kz: 'Үстел нөмірі (міндетті емес):', en: 'Table number (optional):', zh: '桌号（可选）:' },
-  table_number_ph:      { ru: 'Введите номер стола...', kz: 'Үстел нөмірін енгізіңіз...', en: 'Enter table number...', zh: '请输入桌号...' },
-  table_advance_warn:   { ru: '⚠️ Если заказываете заранее (не находясь в заведении) — стол может быть занят. Это будет указано в сообщении WhatsApp.', kz: '⚠️ Егер сіз алдын ала тапсырыс берсеңіз (мекемеде болмасаңыз) — үстел бос болмауы мүмкін. Бұл WhatsApp хабарламасында көрсетіледі.', en: '⚠️ If ordering in advance (not at the venue) — the table may be occupied. This will be noted in the WhatsApp message.', zh: '⚠️ 如果提前点餐（不在餐厅）— 桌子可能已被占用。这将在WhatsApp消息中注明。' },
-  order_instagram:      { ru: 'Заказать через Instagram', kz: 'Instagram арқылы тапсырыс беру', en: 'Order via Instagram', zh: '通过 Instagram 订购' },
+  table_number_label: { ru: 'Номер стола (необязательно):', kz: 'Үстел нөмірі (міндетті емес):', en: 'Table number (optional):', zh: '桌号（可选）：' },
+  table_number_ph:    { ru: 'Введите номер стола...', kz: 'Үстел нөмірін енгізіңіз...', en: 'Enter table number...', zh: '输入桌号...' },
+  table_advance_warn: { ru: '⚠️ Если заказываете заранее (не находясь в заведении) — стол может быть занят. Это будет указано в сообщении WhatsApp.', kz: '⚠️ Егер алдын ала тапсырыс берсеңіз (мекемеде болмасаңыз) — үстел бос болмауы мүмкін. Бұл WhatsApp хабарламасында көрсетіледі.', en: '⚠️ If ordering in advance (not at the venue) — the table might be occupied. This will be noted in the WhatsApp message.', zh: '⚠️ 如果提前预订（不在店内）——桌子可能被占用。这将在WhatsApp消息中注明。' },
 
   // About Values
   value_meat_title: { ru: 'Свежее мясо', kz: 'Жаңа ет', en: 'Fresh Meat', zh: '鲜肉' },
@@ -399,7 +398,7 @@ const MENU = [
     },
     "price": 2390,
     "origPrice": null,
-    "img": "images/хрустящий баклажан.png",
+    "img": "images/webp/хрустящий баклажан.webp",
     "emoji": "🍆",
     "gradient": [
       "#4A148C",
@@ -426,7 +425,7 @@ const MENU = [
     },
     "price": 1850,
     "origPrice": null,
-    "img": "images/мужской каприз.png",
+    "img": "images/webp/мужской каприз.webp",
     "emoji": "🥩",
     "gradient": [
       "#3E2723",
@@ -993,7 +992,7 @@ const MENU = [
     },
     "price": 1800,
     "origPrice": null,
-    "img": "images/Бөдене сорпасы.png",
+    "img": "images/webp/Бөдене сорпасы.webp",
     "emoji": "🥣",
     "gradient": [
       "#795548",
@@ -1020,7 +1019,7 @@ const MENU = [
     },
     "price": 1690,
     "origPrice": null,
-    "img": "images/Суп тефтели.png",
+    "img": "images/webp/Суп тефтели.webp",
     "emoji": "🥣",
     "gradient": [
       "#5D4037",
@@ -1398,7 +1397,7 @@ const MENU = [
     },
     "price": 1890,
     "origPrice": null,
-    "img": "images/Лағман «Цомян».png",
+    "img": "images/webp/Лағман «Цомян».webp",
     "emoji": "🍜",
     "gradient": [
       "#C62828",
@@ -1938,7 +1937,7 @@ const MENU = [
     },
     "price": 1590,
     "origPrice": null,
-    "img": "images/сырный лаваш.png",
+    "img": "images/webp/сырный лаваш.webp",
     "emoji": "🧀",
     "gradient": [
       "#FBC02D",
@@ -1992,7 +1991,7 @@ const MENU = [
     },
     "price": 890,
     "origPrice": null,
-    "img": "images/webp/хотдог.webp",
+    "img": "images/хотдог.jpg",
     "emoji": "🌭",
     "gradient": [
       "#D32F2F",
@@ -2019,7 +2018,7 @@ const MENU = [
     },
     "price": 900,
     "origPrice": null,
-    "img": "images/шаурма куриная.png",
+    "img": "images/webp/шаурма куриная.webp",
     "emoji": "🌯",
     "gradient": [
       "#E64A19",
@@ -2154,7 +2153,7 @@ const MENU = [
     },
     "price": 950,
     "origPrice": null,
-    "img": "images/куриное филе.png",
+    "img": "images/webp/куриное филе.webp",
     "emoji": "🍗",
     "gradient": [
       "#FBC02D",
@@ -2262,7 +2261,7 @@ const MENU = [
     },
     "price": 1300,
     "origPrice": null,
-    "img": "images/окорочка шашлык.png",
+    "img": "images/webp/окорочка шашлык.webp",
     "emoji": "🍗",
     "gradient": [
       "#D84315",
@@ -2505,7 +2504,7 @@ const MENU = [
     },
     "price": 800,
     "origPrice": null,
-    "img": "images/картофельные шарики.png",
+    "img": "images/webp/картофельные шарики.webp",
     "emoji": "🥔",
     "gradient": [
       "#FFB300",
@@ -3148,7 +3147,7 @@ const MENU = [
     },
     "price": 200,
     "origPrice": null,
-    "img": "images/webp/водабезгаза0,5.webp",
+    "img": "images/водабезгаза0,5.jpg",
     "emoji": "💧",
     "gradient": [
       "#FFFFFF",
@@ -3175,7 +3174,7 @@ const MENU = [
     },
     "price": 490,
     "origPrice": null,
-    "img": "images/webp/водабезгаза1л.webp",
+    "img": "images/водабезгаза1л.jpg",
     "emoji": "💧",
     "gradient": [
       "#FFFFFF",
@@ -3202,7 +3201,7 @@ const MENU = [
     },
     "price": 350,
     "origPrice": null,
-    "img": "images/webp/газированнаявода.webp",
+    "img": "images/газированнаявода.jpg",
     "emoji": "💧",
     "gradient": [
       "#FFFFFF",
@@ -3310,7 +3309,7 @@ const MENU = [
     },
     "price": 500,
     "origPrice": null,
-    "img": "images/webp/колажбанка.webp",
+    "img": "images/колажбанка.jpg",
     "emoji": "🥤",
     "gradient": [
       "#F44336",
@@ -3337,7 +3336,7 @@ const MENU = [
     },
     "price": 700,
     "origPrice": null,
-    "img": "images/webp/коланаразлив.webp",
+    "img": "images/коланаразлив.jpg",
     "emoji": "🥤",
     "gradient": [
       "#FFFFFF",
@@ -3364,7 +3363,7 @@ const MENU = [
     },
     "price": 600,
     "origPrice": null,
-    "img": "images/webp/колавстекле.webp",
+    "img": "images/колавстекле.jpg",
     "emoji": "🍾",
     "gradient": [
       "#FFFFFF",
@@ -3391,7 +3390,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/webp/сокпико1.webp",
+    "img": "images/сокпико1.jpg",
     "emoji": "🧃",
     "gradient": [
       "#4CAF50",
@@ -3418,7 +3417,7 @@ const MENU = [
     },
     "price": 500,
     "origPrice": null,
-    "img": "images/webp/fusetea0.5.webp",
+    "img": "images/fusetea0.5.jpg",
     "emoji": "🧃",
     "gradient": [
       "#FFEB3B",
@@ -3445,7 +3444,7 @@ const MENU = [
     },
     "price": 890,
     "origPrice": null,
-    "img": "images/webp/fusetea1.webp",
+    "img": "images/fusetea1.jpg",
     "emoji": "🧃",
     "gradient": [
       "#FFEB3B",
@@ -3472,7 +3471,7 @@ const MENU = [
     },
     "price": 600,
     "origPrice": null,
-    "img": "images/webp/коланольпять.webp",
+    "img": "images/коланольпять.jpg",
     "emoji": "🥤",
     "gradient": [
       "#D32F2F",
@@ -3485,46 +3484,75 @@ const MENU = [
     "id": 1115,
     "cat": "drinks",
     "name": {
-      grid.style.display = '';
-  grid.innerHTML = items.map((item, idx) => {
-    const disc = item.origPrice ? Math.round((1 - item.price / item.origPrice) * 100) : null;
-    // Use real <img> with loading=lazy for first 4 (visible), rest use IntersectionObserver
-    const isEager = idx < 4;
-    const imgHtml = item.img
-      ? `<div class="card-img card-img-skeleton">
-           <img class="card-lazy-img${isEager ? ' card-img-eager' : ''}" 
-                ${isEager ? `src="${item.img}"` : `data-src="${item.img}"`}
-                alt="${item.name[currentLang]}" 
-                loading="${isEager ? 'eager' : 'lazy'}"
-                decoding="async"
-                width="200" height="160"
-                onload="this.parentNode.classList.remove('card-img-skeleton');this.classList.add('card-img-loaded')">
-         </div>`
-      : `<div class="card-emoji-wrap" style="background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})">
-           <span class="card-emoji">${item.emoji}</span>
-         </div>`;
-    return `
-      <div class="food-card" onclick="openModal(${item.id})"
-           style="animation-delay:${Math.min(idx,8)*0.05}s" role="listitem">
-        <div class="card-img-wrap">
-          ${imgHtml}
-          ${disc ? `<div class="card-disc-badge">-${disc}%</div>` : (item.isHit ? `<div class="card-hit-badge">HIT</div>` : (item.isNew ? `<div class="card-new-badge">NEW</div>` : ''))}
-          <div class="card-ctrl-slot" data-cid="${item.id}">${cardCtrlHtml(item.id)}</div>
-        </div>
-        <div class="card-body">
-          <div class="card-price-row">
-            <span class="card-price">${item.price.toLocaleString('ru-RU')} ₸</span>
-            ${item.origPrice ? `<span class="card-orig">${item.origPrice.toLocaleString('ru-RU')} ₸</span>` : ''}
-          </div>
-          <div class="card-name">${item.name[currentLang]}</div>
-          ${item.rating ? `<div class="card-rating">${'⭐'.repeat(Math.round(item.rating/20))} <span style="color:var(--text-muted);font-size:0.7rem">(${item.reviews})</span></div>` : ''}
-        </div>
-      </div>`;
-  }).join('');
-  // Activate IntersectionObserver for lazy images
-  initLazyImages();
-}: null,
-    "img": "images/webp/кола1л.webp",
+      "ru": "Fanta 0.5 л",
+      "kz": "Fanta 0.5 л",
+      "en": "Fanta 0.5L",
+      "zh": "芬达 0.5升"
+    },
+    "weight": "0.5 л",
+    "desc": {
+      "ru": "Освежающий напиток.",
+      "kz": "Сергітетін сусын.",
+      "en": "Refreshing drink.",
+      "zh": "芬达橙味饮料 0.5升。"
+    },
+    "price": 600,
+    "origPrice": null,
+    "img": "images/фантанольпять.jpg",
+    "emoji": "🥤",
+    "gradient": [
+      "#FF9800",
+      "#F57F17"
+    ],
+    "rating": 95,
+    "reviews": 10
+  },
+  {
+    "id": 1116,
+    "cat": "drinks",
+    "name": {
+      "ru": "Sprite 0.5 л",
+      "kz": "Sprite 0.5 л",
+      "en": "Sprite 0.5L",
+      "zh": "雪碧 0.5升"
+    },
+    "weight": "0.5 л",
+    "desc": {
+      "ru": "Освежающий напиток.",
+      "kz": "Сергітетін сусын.",
+      "en": "Refreshing drink.",
+      "zh": "雪碧柠檬味 0.5升。"
+    },
+    "price": 600,
+    "origPrice": null,
+    "img": "images/webp/спрайт0,5.webp",
+    "emoji": "🥤",
+    "gradient": [
+      "#8BC34A",
+      "#689F38"
+    ],
+    "rating": 95,
+    "reviews": 10
+  },
+  {
+    "id": 1117,
+    "cat": "drinks",
+    "name": {
+      "ru": "Coca-Cola 1 л",
+      "kz": "Coca-Cola 1 л",
+      "en": "Coca-Cola 1L",
+      "zh": "可口可乐 1升"
+    },
+    "weight": "1 л",
+    "desc": {
+      "ru": "Освежающий напиток.",
+      "kz": "Сергітетін сусын.",
+      "en": "Refreshing drink.",
+      "zh": "经典可口可乐 1升。"
+    },
+    "price": 890,
+    "origPrice": null,
+    "img": "images/кола1л.jpg",
     "emoji": "🥤",
     "gradient": [
       "#D32F2F",
@@ -3551,7 +3579,7 @@ const MENU = [
     },
     "price": 890,
     "origPrice": null,
-    "img": "images/webp/фанта1л.webp",
+    "img": "images/фанта1л.jpg",
     "emoji": "🥤",
     "gradient": [
       "#FF9800",
@@ -3605,7 +3633,7 @@ const MENU = [
     },
     "price": 2900,
     "origPrice": 3300,
-    "img": "images/webp/food_combo1.webp",
+    "img": "images/food_combo1.jpg",
     "emoji": "🥘",
     "gradient": [
       "#1A237E",
@@ -3632,7 +3660,7 @@ const MENU = [
     },
     "price": 2500,
     "origPrice": null,
-    "img": "images/webp/food_beshbarmak.webp",
+    "img": "images/food_beshbarmak.jpg",
     "emoji": "🥘",
     "gradient": [
       "#6B2121",
@@ -3659,7 +3687,7 @@ const MENU = [
     },
     "price": 1200,
     "origPrice": null,
-    "img": "images/webp/food_manti.webp",
+    "img": "images/food_manti.jpg",
     "emoji": "🥟",
     "gradient": [
       "#5C3317",
@@ -3677,9 +3705,9 @@ const PROMOS = [
 ];
 
 const CABINS = [
-  { id: 1, name: { ru: 'Караоке зона для компании', kz: 'Компанияға арналған караоке аймағы', en: 'Karaoke zone for groups', zh: '团体卡拉OK区' }, desc: { ru: 'Удобная и просторная кабинка для праздников с караоке', kz: 'Караокесі бар мерекелерге арналған ыңғайлы әрі кең кабина', en: 'Comfortable and spacious cabin for holidays with karaoke', zh: '舒适宽敞的卡拉OK度假舱' }, capacity: { ru: 'до 16 человек', kz: '16 адамға дейін', en: 'up to 16 people', zh: '最多16人' }, img: 'images/webp/кабинка1.webp' },
-  { id: 2, name: { ru: 'Казахская кабинка', kz: 'Қазақ кабинасы', en: 'Kazakh cabin', zh: '哈萨克包间' }, desc: { ru: 'Традиционная кабинка в стиле топчана с корпеше и подушками, чтобы отдохнуть и почувствовать себя как в юрте.', kz: 'Демалып, өзіңізді киіз үйдегідей сезіну үшін көрпешелер мен жастықтары бар тапшан стиліндегі дәстүрлі кабина.', en: 'Traditional tapshan-style cabin with bedding and pillows to relax and feel like in a yurt.', zh: '传统的塔普山风格包间，配有床上用品和枕头，让您放松身心，感觉就像在蒙古包里一样。' }, capacity: { ru: '12 человек', kz: '12 адам', en: '12 people', zh: '12人' }, img: 'images/webp/кабинка2.webp' },
-  { id: 3, name: { ru: 'ВИП караоке зона', kz: 'VIP караоке аймағы', en: 'VIP karaoke zone', zh: 'VIP卡拉OK区' }, desc: { ru: 'Уютное идеальное место, чтобы повеселиться, поговорить по душам и попеть.', kz: 'Көңіл көтеруге, шын жүректен сөйлесуге және ән айтуға арналған жайлы тамаша орын.', en: 'Cozy and perfect place to have fun, have heart-to-heart talks, and sing.', zh: '舒适完美的聚会场所，适合尽情欢乐、畅所欲言和唱歌。' }, capacity: { ru: 'до 10 человек', kz: '10 адамға дейін', en: 'up to 10 people', zh: '最多10人' }, img: 'images/webp/кабинка3.webp' }
+  { id: 1, name: { ru: 'Караоке зона для компании', kz: 'Компанияға арналған караоке аймағы', en: 'Karaoke zone for groups', zh: '团体卡拉OK区' }, desc: { ru: 'Удобная и просторная кабинка для праздников с караоке', kz: 'Караокесі бар мерекелерге арналған ыңғайлы әрі кең кабина', en: 'Comfortable and spacious cabin for holidays with karaoke', zh: '舒适宽敞的卡拉OK度假舱' }, capacity: { ru: 'до 16 человек', kz: '16 адамға дейін', en: 'up to 16 people', zh: '最多16人' }, img: 'images/кабинка1.png' },
+  { id: 2, name: { ru: 'Казахская кабинка', kz: 'Қазақ кабинасы', en: 'Kazakh cabin', zh: '哈萨克包间' }, desc: { ru: 'Традиционная кабинка в стиле топчана с корпеше и подушками, чтобы отдохнуть и почувствовать себя как в юрте.', kz: 'Демалып, өзіңізді киіз үйдегідей сезіну үшін көрпешелер мен жастықтары бар тапшан стиліндегі дәстүрлі кабина.', en: 'Traditional tapshan-style cabin with bedding and pillows to relax and feel like in a yurt.', zh: '传统的塔普山风格包间，配有床上用品和枕头，让您放松身心，感觉就像在蒙古包里一样。' }, capacity: { ru: '12 человек', kz: '12 адам', en: '12 people', zh: '12人' }, img: 'images/кабинка2.png' },
+  { id: 3, name: { ru: 'ВИП караоке зона', kz: 'VIP караоке аймағы', en: 'VIP karaoke zone', zh: 'VIP卡拉OK区' }, desc: { ru: 'Уютное идеальное место, чтобы повеселиться, поговорить по душам и попеть.', kz: 'Көңіл көтеруге, шын жүректен сөйлесуге және ән айтуға арналған жайлы тамаша орын.', en: 'Cozy and perfect place to have fun, have heart-to-heart talks, and sing.', zh: '舒适完美的聚会场所，适合尽情欢乐、畅所欲言和唱歌。' }, capacity: { ru: 'до 10 человек', kz: '10 адамға дейін', en: 'up to 10 people', zh: '最多10人' }, img: 'images/кабинка3.png' }
 ];
 
 // ============================================================
@@ -4036,7 +4064,21 @@ function renderHome() {
       <div class="pop-chip" onclick="openModal(${item.id})">
         <div class="pop-chip-img"
              style="${item.img
-               ? null
+               ? `background-image:url('${item.img}');background-size:cover;background-position:center`
+               : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`}">
+          ${!item.img ? `<span style="font-size:3rem">${item.emoji}</span>` : ''}
+          <div class="card-ctrl-slot" data-cid="${item.id}">${cardCtrlHtml(item.id)}</div>
+        </div>
+        <div class="pop-chip-body">
+          <div class="pop-chip-price">${item.price.toLocaleString('ru-RU')} ₸</div>
+          <div class="pop-chip-name">${item.name[currentLang]}</div>
+        </div>
+      </div>`).join('');
+  }
+}
+
+// ── Promo ticker ────────────────────────────────────────────
+function showPromo(idx) {
   promoIdx = (idx + PROMOS.length) % PROMOS.length;
   const p = PROMOS[promoIdx];
   const card = document.getElementById('promo-slide-card');
@@ -4112,7 +4154,7 @@ function renderGrid(query = '') {
   grid.innerHTML = items.map((item, idx) => {
     const disc = item.origPrice ? Math.round((1 - item.price / item.origPrice) * 100) : null;
     const imgHtml = item.img
-      ? `<div class="card-img card-img-skeleton"><img class="card-lazy-img${idx<4?' card-img-eager':''}" ${idx<4?`src="${item.img}"`:`data-src="${item.img}"`} alt="${item.name[currentLang]}" loading="${idx<4?'eager':'lazy'}" decoding="async" width="200" height="160" onload="this.parentNode.classList.remove('card-img-skeleton');this.classList.add('card-img-loaded')"></div>`
+      ? `<div class="card-img" style="background-image:url('${item.img}')"></div>`
       : `<div class="card-emoji-wrap" style="background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})">
            <span class="card-emoji">${item.emoji}</span>
          </div>`;
@@ -4164,14 +4206,14 @@ function renderPromos() {
   grid.innerHTML = items.map((item, idx) => {
     const pct  = item.origPrice ? Math.round((1 - item.price / item.origPrice) * 100) : 15;
     const save = item.origPrice ? (item.origPrice - item.price) : null;
+    const imgStyle = item.img
+      ? `background-image:url('${item.img}');background-size:cover;background-position:center`
+      : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
     return `
       <div class="promo-item-card" onclick="openModal(${item.id})"
            style="animation-delay:${Math.min(idx,8)*0.05}s">
-        <div class="pic-img pic-img-skeleton" ${!item.img ? `style="background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})"` : ''}>
-          ${item.img
-            ? `<img class="card-lazy-img" data-src="${item.img}" alt="${item.name[currentLang]}" loading="lazy" decoding="async" width="200" height="150" onload="this.parentNode.classList.remove('pic-img-skeleton');this.classList.add('card-img-loaded')">`
-            : `<span style="font-size:3rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.2))">${item.emoji}</span>`
-          }
+        <div class="pic-img" style="${imgStyle}">
+          ${!item.img ? `<span style="font-size:3rem;filter:drop-shadow(0 3px 10px rgba(0,0,0,.2))">${item.emoji}</span>` : ''}
           <div class="pic-disc">-${pct}%</div>
         </div>
         <div class="pic-body">
@@ -4187,7 +4229,6 @@ function renderPromos() {
         </div>
       </div>`;
   }).join('');
-  initLazyImages();
 }
 
 // ============================================================
@@ -4224,13 +4265,14 @@ function openModal(id) {
 
   const imgEl = document.getElementById('modal-img-el');
   if (item.img) {
-    imgEl.style.background = 'var(--bg)';
-    imgEl.style.backgroundImage = 'none';
-    // Use <img> so browser reuses already-cached WebP from card grid
-    imgEl.innerHTML = `<img src="${item.img}" alt="${item.name[currentLang]}" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">`;
+    imgEl.style.background      = 'var(--bg)';
+    imgEl.style.backgroundImage = `url('${item.img}')`;
+    imgEl.style.backgroundSize  = 'cover';
+    imgEl.style.backgroundPosition = 'center';
+    imgEl.innerHTML = '';
   } else {
     imgEl.style.backgroundImage = 'none';
-    imgEl.style.background = `linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
+    imgEl.style.background      = `linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
     imgEl.innerHTML = `<span class="modal-emoji-big">${item.emoji}</span>`;
   }
 
@@ -4317,9 +4359,12 @@ function renderDrawerItems() {
   footEl.style.display  = 'block';
 
   container.innerHTML = cart.map(item => {
+    const iStyle = item.img
+      ? `background-image:url('${item.img}');background-size:cover;background-position:center`
+      : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
     return `
       <div class="drawer-item">
-        <div class="di-img" style="${item.img ? '' : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`}">${item.img ? `<img src="${item.img}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">` : item.emoji}</div>
+        <div class="di-img" style="${iStyle}">${!item.img ? item.emoji : ''}</div>
         <div class="di-info">
           <div class="di-name">${item.name[currentLang] || item.name}</div>
           <div class="di-price">${item.price.toLocaleString('ru-RU')} ₸</div>
@@ -4356,28 +4401,41 @@ let contactChannel = 'whatsapp';
 
 function setContactChannel(ch) {
   contactChannel = ch;
-  document.getElementById('ch-whatsapp').classList.toggle('active', ch === 'whatsapp');
-  document.getElementById('ch-instagram').classList.toggle('active', ch === 'instagram');
-  const btn = document.getElementById('order-channel-btn');
-  if (!btn) return;
-  if (ch === 'instagram') {
-    btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span data-i18n="order_instagram">Заказать через Instagram</span>';
+  const waBtn = document.getElementById('ch-whatsapp');
+  const igBtn = document.getElementById('ch-instagram');
+  const mainBtn = document.getElementById('order-channel-btn');
+
+  if (ch === 'whatsapp') {
+    if(waBtn) waBtn.classList.add('active');
+    if(igBtn) igBtn.classList.remove('active');
+    if(mainBtn) {
+      mainBtn.classList.remove('instagram-mode');
+      const spanEl = mainBtn.querySelector('span[data-i18n]');
+      if (spanEl) {
+        const k = spanEl.getAttribute('data-i18n');
+        if (I18N[k] && I18N[k][currentLang]) spanEl.textContent = I18N[k][currentLang];
+      } else {
+        mainBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Заказать в WhatsApp`;
+      }
+    }
   } else {
-    btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span data-i18n="order_whatsapp">Заказать через WhatsApp</span>';
-  }
-  // Toggle Instagram gradient on the main button
-  btn.classList.toggle('instagram-mode', ch === 'instagram');
-  // Translate the button text using currentLang
-  const spanEl = btn.querySelector('span[data-i18n]');
-  if (spanEl) {
-    const k = spanEl.getAttribute('data-i18n');
-    if (I18N[k] && I18N[k][currentLang]) spanEl.textContent = I18N[k][currentLang];
+    if(waBtn) waBtn.classList.remove('active');
+    if(igBtn) igBtn.classList.add('active');
+    if(mainBtn) {
+      mainBtn.classList.add('instagram-mode');
+      mainBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Заказать в Instagram`;
+    }
   }
 }
 
 function orderViaWhatsApp() {
   if (!cart.length) return;
-
+  
+  if (contactChannel === 'instagram') {
+    window.open('https://www.instagram.com/martebe.kaz/', '_blank');
+    return;
+  }
+  
   if (orderType === 'delivery') {
     const addr = document.getElementById('delivery-address').value.trim();
     if (!addr) {
@@ -4387,40 +4445,35 @@ function orderViaWhatsApp() {
     }
   }
 
-  // When Chinese is active, use Kazakh dish names in WhatsApp message
-  const nameLang = (currentLang === 'zh') ? 'kz' : currentLang;
-
   let msg = '🍽️ *Заказ из ресторана märtebe*\n\n';
-
+  
   let typeStr = 'С собой';
   if (orderType === 'dinein') typeStr = 'В заведении';
   if (orderType === 'delivery') typeStr = 'Доставка';
-
+  
   msg += `Способ получения: *${typeStr}*\n`;
-
   if (orderType === 'delivery') {
     msg += `📍 Адрес: *${document.getElementById('delivery-address').value.trim()}*\n`;
-  }
-
-  if (orderType === 'dinein') {
+  } else if (orderType === 'dinein') {
     const tableEl = document.getElementById('table-number');
-    const tableNum = tableEl ? tableEl.value.trim() : '';
-    if (tableNum) {
-      msg += `🪑 Стол: *№${tableNum}*\n`;
+    if (tableEl && tableEl.value.trim()) {
+      msg += `🪑 Стол: *${tableEl.value.trim()}*\n`;
     }
-    msg += `\n⚠️ _Если заказ оформлен заранее (вне заведения) — стол может быть занят._\n`;
+    msg += `⚠️ _Примечание: заказ сделан заранее, стол может быть занят._\n`;
   }
-
   msg += '\n';
 
+  // Fix: for Chinese language, send dish names in Kazakh
+  const langForMsg = currentLang === 'zh' ? 'kz' : currentLang;
+
   cart.forEach(i => {
-    const itemName = (i.name[nameLang] || i.name['kz'] || i.name['ru'] || i.name);
+    const itemName = i.name[langForMsg] || i.name;
     msg += `${i.emoji} ${itemName} × ${i.qty} = ${(i.price*i.qty).toLocaleString('ru-RU')} ₸\n`;
   });
-
+  
   let subTotal = getCartTotal();
   const containers = getContainersTotal();
-
+  
   if (containers > 0) {
     msg += `\nКонтейнеры / Коробки: ${containers.toLocaleString('ru-RU')} ₸\n`;
     subTotal += containers;
@@ -4435,18 +4488,13 @@ function orderViaWhatsApp() {
   }
 
   msg += `\n💰 *Итого: ${finalTotal.toLocaleString('ru-RU')} ₸*`;
-
+  
   if (orderType === 'delivery') {
     msg += '\n\n_Примечание: доставка вне таможни оплачивается клиентом (такси)._';
   }
 
   msg += '\n\n📍 _Сарыагаш, Кошербаева 1А. Жду подтверждения!_';
-
-  if (contactChannel === 'instagram') {
-    window.open('https://www.instagram.com/martebe.kaz/', '_blank');
-  } else {
-    window.open(`https://wa.me/${WA_ORDER}?text=${encodeURIComponent(msg)}`, '_blank');
-  }
+  window.open(`https://wa.me/${WA_ORDER}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // ============================================================
@@ -4605,54 +4653,6 @@ function updateTrustSection() {
 }
 
 // ============================================================
-//  LAZY IMAGE LOADER  (IntersectionObserver)
-// ============================================================
-let _lazyObserver = null;
-
-function initLazyImages() {
-  // Find all images with data-src (not yet loaded)
-  const lazyImgs = document.querySelectorAll('img.card-lazy-img[data-src]');
-  if (!lazyImgs.length) return;
-
-  if (!_lazyObserver) {
-    _lazyObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          const src = img.dataset.src;
-          if (src) {
-            img.src = src;
-            delete img.dataset.src;
-          }
-          _lazyObserver.unobserve(img);
-        }
-      });
-    }, {
-      rootMargin: '200px 0px', // Start loading 200px before entering viewport
-      threshold: 0
-    });
-  }
-
-  lazyImgs.forEach(img => _lazyObserver.observe(img));
-}
-
-// Preload modal image for fast display
-const _imgCache = new Map();
-function preloadImage(src) {
-  if (!src || _imgCache.has(src)) return;
-  const img = new Image();
-  img.src = src;
-  _imgCache.set(src, img);
-}
-
-// Preload images for all currently visible cards (called after rendering)
-function preloadVisibleCardImages() {
-  document.querySelectorAll('.card-lazy-img.card-img-eager').forEach(img => {
-    if (img.src) preloadImage(img.src);
-  });
-}
-
-// ============================================================
 //  INIT
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -4697,25 +4697,5 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { closeModal(); closeDrawer(); closeSearch(); hideConfirm(); }
   });
-
-  // Hover/touchstart preload: load modal image before user taps
-  document.addEventListener('mouseover', e => {
-    const card = e.target.closest('.food-card, .menu-list-item, .promo-item-card, .pop-chip');
-    if (!card) return;
-    const onclick = card.getAttribute('onclick') || '';
-    const match = onclick.match(/openModal\((\d+)\)/);
-    if (!match) return;
-    const item = MENU.find(m => m.id === parseInt(match[1]));
-    if (item && item.img) preloadImage(item.img);
-  }, { passive: true });
-
-  document.addEventListener('touchstart', e => {
-    const card = e.target.closest('.food-card, .menu-list-item, .promo-item-card, .pop-chip');
-    if (!card) return;
-    const onclick = card.getAttribute('onclick') || '';
-    const match = onclick.match(/openModal\((\d+)\)/);
-    if (!match) return;
-    const item = MENU.find(m => m.id === parseInt(match[1]));
-    if (item && item.img) preloadImage(item.img);
-  }, { passive: true });
 });
+
