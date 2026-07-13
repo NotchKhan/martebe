@@ -84,7 +84,20 @@
         <button class="lang-btn" data-lang="ru" onclick="setLang('ru')">RU</button>
         <button class="lang-btn active" data-lang="kz" onclick="setLang('kz')">KZ</button>
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">ZH</button>
+        <div class="lang-more-wrap" id="lang-more-wrap">
+          <button class="lang-more-btn" id="lang-more-btn" onclick="toggleLangMore(event)" aria-label="Другие языки" style="display: flex; align-items: center; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="1.5"></circle>
+              <circle cx="19" cy="12" r="1.5"></circle>
+              <circle cx="5" cy="12" r="1.5"></circle>
+            </svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown">
+            <button class="lang-btn" data-lang="zh" onclick="setLang('zh');closeLangMore()">ZH</button>
+            <button class="lang-btn" data-lang="hi" onclick="setLang('hi');closeLangMore()">HI</button>
+            <button class="lang-btn" data-lang="ja" onclick="setLang('ja');closeLangMore()">JA</button>
+          </div>
+        </div>
       </div>
 
       <button class="icon-btn" id="search-btn" aria-label="Поиск по меню">🔍</button>
