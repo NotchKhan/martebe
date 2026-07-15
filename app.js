@@ -545,12 +545,20 @@ const I18N = {
     "ja": "+ カートに追加"
   },
   "drawer_container_fee": {
-    "ru": "Контейнеры / Коробки",
-    "kz": "Контейнерлер / Қораптар",
-    "en": "Containers / Boxes",
-    "zh": "容器/盒子",
-    "hi": "कंटेनर / बॉक्स",
-    "ja": "容器 / 箱"
+    "ru": "Контейнеры",
+    "kz": "Контейнерлер",
+    "en": "Containers",
+    "zh": "容器",
+    "hi": "कंटेनर",
+    "ja": "容器"
+  },
+  "drawer_box_fee": {
+    "ru": "Коробки для пиццы",
+    "kz": "Пицца қораптары",
+    "en": "Pizza boxes",
+    "zh": "披萨盒",
+    "hi": "पिज्जा बॉक्स",
+    "ja": "ピザの箱"
   },
   "table_number_label": {
     "ru": "Номер стола (необязательно):",
@@ -5152,19 +5160,31 @@ function getCartCount() { return cart.reduce((s, i) => s + i.qty, 0); }
 function getCartTotal() { return cart.reduce((s, i) => s + i.price * i.qty, 0); }
 function getQty(id) { const f = cart.find(c => c.id === id); return f ? f.qty : 0; }
 
-function getContainersTotal() {
-  if (orderType === 'dinein') return 0;
-  let total = 0;
+function getContainersInfo() {
+  let res = { containersCount: 0, boxesCount: 0, containersTotal: 0, boxesTotal: 0 };
+  if (orderType === 'dinein') return res;
+  
   cart.forEach(i => {
     const menuItem = MENU.find(m => m.id === i.id);
     if (menuItem) {
-      const cats = ['breakfasts', 'salads', 'first', 'second', 'steaks', 'pizza'];
-      if (cats.includes(menuItem.cat) || menuItem.id === 517 || menuItem.id === 522) {
-        total += 150 * i.qty;
+      if (menuItem.cat === 'pizza') {
+        res.boxesCount += i.qty;
+        res.boxesTotal += 150 * i.qty;
+      } else {
+        const cats = ['breakfasts', 'salads', 'first', 'second', 'steaks'];
+        if (cats.includes(menuItem.cat) || menuItem.id === 517 || menuItem.id === 522) {
+          res.containersCount += i.qty;
+          res.containersTotal += 150 * i.qty;
+        }
       }
     }
   });
-  return total;
+  return res;
+}
+
+function getContainersTotal() {
+  const info = getContainersInfo();
+  return info.containersTotal + info.boxesTotal;
 }
 
 function clearCart() {
@@ -5692,18 +5712,28 @@ function renderDrawerItems() {
       </div>`;
   }).join('');
 
-  const containers = getContainersTotal();
+  const cInfo = getContainersInfo();
   const feeRow = document.getElementById('drawer-container-fee-row');
   if (feeRow) {
-    if (containers > 0) {
+    if (cInfo.containersCount > 0) {
       feeRow.style.display = 'flex';
-      document.getElementById('drawer-container-fee').textContent = containers.toLocaleString('ru-RU') + ' ₸';
+      document.getElementById('drawer-container-fee').textContent = `${cInfo.containersCount} шт × 150 = ${cInfo.containersTotal.toLocaleString('ru-RU')} ₸`;
     } else {
       feeRow.style.display = 'none';
     }
   }
 
-  let total = getCartTotal() + containers;
+  const boxRow = document.getElementById('drawer-box-fee-row');
+  if (boxRow) {
+    if (cInfo.boxesCount > 0) {
+      boxRow.style.display = 'flex';
+      document.getElementById('drawer-box-fee').textContent = `${cInfo.boxesCount} шт × 150 = ${cInfo.boxesTotal.toLocaleString('ru-RU')} ₸`;
+    } else {
+      boxRow.style.display = 'none';
+    }
+  }
+
+  let total = getCartTotal() + cInfo.containersTotal + cInfo.boxesTotal;
   if (orderType === 'dinein') {
     total = Math.round(total * 1.12);
   }
@@ -5787,11 +5817,16 @@ function orderViaWhatsApp() {
   });
 
   let subTotal = getCartTotal();
-  const containers = getContainersTotal();
+  const cInfo = getContainersInfo();
 
-  if (containers > 0) {
-    msg += `\nКонтейнеры / Коробки: ${containers.toLocaleString('ru-RU')} ₸\n`;
-    subTotal += containers;
+  if (cInfo.containersCount > 0) {
+    msg += `\nКонтейнеры: ${cInfo.containersCount} шт × 150 = ${cInfo.containersTotal.toLocaleString('ru-RU')} ₸\n`;
+    subTotal += cInfo.containersTotal;
+  }
+  
+  if (cInfo.boxesCount > 0) {
+    msg += `\nКоробки для пиццы: ${cInfo.boxesCount} шт × 150 = ${cInfo.boxesTotal.toLocaleString('ru-RU')} ₸\n`;
+    subTotal += cInfo.boxesTotal;
   }
 
   let finalTotal = subTotal;
