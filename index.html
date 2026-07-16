@@ -547,6 +547,60 @@
     </div>
   </div>
 
+  <!-- ════════════════════════════════════════════════════════
+       CABIN VIDEO MODAL
+       ════════════════════════════════════════════════════════ -->
+  <div class="cabin-video-overlay" id="cabin-video-overlay" onclick="closeCabinVideo()"></div>
+  <div class="cabin-video-modal" id="cabin-video-modal" role="dialog" aria-modal="true" aria-label="Видео кабинок">
+    <!-- Header -->
+    <div class="cvm-header">
+      <div class="cvm-title">
+        <span class="cvm-icon">🎬</span>
+        <span id="cvm-cabin-name">Кабинка</span>
+      </div>
+      <button class="cvm-close" onclick="closeCabinVideo()" aria-label="Закрыть">✕</button>
+    </div>
+
+    <!-- Video area -->
+    <div class="cvm-video-wrap">
+      <!-- Prev arrow -->
+      <button class="cvm-arrow cvm-arrow-left" id="cvm-prev" onclick="cabinVideoPrev()" aria-label="Предыдущая кабинка">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+      </button>
+
+      <div class="cvm-video-container" id="cvm-video-container">
+        <video class="cvm-video" id="cvm-video-el"
+               playsinline
+               controls
+               preload="metadata"
+               src="">
+        </video>
+        <!-- Loading spinner -->
+        <div class="cvm-spinner" id="cvm-spinner">
+          <div class="cvm-spin-ring"></div>
+        </div>
+      </div>
+
+      <!-- Next arrow -->
+      <button class="cvm-arrow cvm-arrow-right" id="cvm-next" onclick="cabinVideoNext()" aria-label="Следующая кабинка">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+      </button>
+    </div>
+
+    <!-- Dots indicator -->
+    <div class="cvm-dots" id="cvm-dots">
+      <span class="cvm-dot active" onclick="cabinVideoGo(0)"></span>
+      <span class="cvm-dot" onclick="cabinVideoGo(1)"></span>
+      <span class="cvm-dot" onclick="cabinVideoGo(2)"></span>
+    </div>
+
+    <!-- Cabin info strip -->
+    <div class="cvm-info" id="cvm-info">
+      <span class="cvm-info-num" id="cvm-info-num">1 / 3</span>
+      <span class="cvm-info-label" id="cvm-info-label"></span>
+    </div>
+  </div>
+
   <!-- Toast Notifications -->
   <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
 

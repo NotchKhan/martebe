@@ -1033,3 +1033,271 @@ a { touch-action: manipulation; }
   align-items: center;
   gap: 3px;
 }
+
+/* ============================================================
+   CABIN VIDEO BUTTON (on cabin card)
+   ============================================================ */
+.cabin-video-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #fff;
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s, opacity 0.18s;
+  box-shadow: 0 4px 16px rgba(15,52,96,0.35);
+  letter-spacing: 0.01em;
+}
+.cabin-video-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15,52,96,0.5);
+}
+.cabin-video-btn:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+.cabin-video-btn .cvb-play-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.cabin-video-btn:hover .cvb-play-icon {
+  background: rgba(255,255,255,0.28);
+}
+
+/* ============================================================
+   CABIN VIDEO MODAL — Full-screen vertical video viewer
+   ============================================================ */
+.cabin-video-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.cabin-video-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.cabin-video-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.92);
+  z-index: 9001;
+  width: min(420px, 96vw);
+  max-height: 92svh;
+  background: #0d0d12;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.06);
+}
+.cabin-video-modal.open {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Header */
+.cvm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, transparent 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  flex-shrink: 0;
+}
+.cvm-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font);
+}
+.cvm-icon { font-size: 1.15rem; }
+.cvm-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+.cvm-close:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* Video area */
+.cvm-video-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  overflow: hidden;
+  background: #000;
+  min-height: 0;
+}
+.cvm-video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* aspect ratio for vertical video like 9:16 */
+  aspect-ratio: 9/16;
+  max-height: calc(92svh - 140px);
+}
+.cvm-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  background: #000;
+  outline: none;
+}
+
+/* Arrow buttons */
+.cvm-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+.cvm-arrow:hover {
+  background: rgba(0,0,0,0.8);
+  transform: translateY(-50%) scale(1.08);
+}
+.cvm-arrow:active { transform: translateY(-50%) scale(0.95); }
+.cvm-arrow-left  { left: 8px; }
+.cvm-arrow-right { right: 8px; }
+.cvm-arrow.hidden { display: none; }
+
+/* Spinner */
+.cvm-spinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.cvm-spinner.visible { opacity: 1; }
+.cvm-spin-ring {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.12);
+  border-top-color: #fff;
+  animation: cvm-spin 0.75s linear infinite;
+}
+@keyframes cvm-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Dots indicator */
+.cvm-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px 6px;
+  flex-shrink: 0;
+}
+.cvm-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.28);
+  cursor: pointer;
+  transition: background 0.22s, transform 0.22s, width 0.22s;
+  flex-shrink: 0;
+}
+.cvm-dot.active {
+  background: #fff;
+  transform: scale(1.15);
+  width: 22px;
+  border-radius: 4px;
+}
+
+/* Info strip */
+.cvm-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px 14px;
+  flex-shrink: 0;
+}
+.cvm-info-num {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  font-family: var(--font);
+  font-weight: 600;
+}
+.cvm-info-label {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+  font-family: var(--font);
+  font-weight: 600;
+  text-align: right;
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
