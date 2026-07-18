@@ -57,12 +57,12 @@ const I18N = {
     "ja": "40品以上の料理"
   },
   "ha_promos": {
-    "ru": "Акции",
-    "kz": "Акциялар",
-    "en": "Promos",
-    "zh": "库存",
-    "hi": "ऑफ़र",
-    "ja": "プロモーション"
+    "ru": "Комбо & Акции",
+    "kz": "Комбо & Акциялар",
+    "en": "Combos & Deals",
+    "zh": "套餐 & 优惠",
+    "hi": "कॉम्बो & ऑफ़र",
+    "ja": "コンボ & プロモ"
   },
   "ha_promos_sub": {
     "ru": "Скидки до 20%",
@@ -297,12 +297,12 @@ const I18N = {
     "ja": "メニュー"
   },
   "tab_promos": {
-    "ru": "Акции",
-    "kz": "Акциялар",
-    "en": "Promos",
-    "zh": "库存",
-    "hi": "ऑफ़र",
-    "ja": "プロモーション"
+    "ru": "Комбо\nАкции",
+    "kz": "Комбо\nАкциялар",
+    "en": "Combo\nDeals",
+    "zh": "套餐\n优惠",
+    "hi": "कॉम्बो\nऑफ़र",
+    "ja": "コンボ\nプロモ"
   },
   "tab_about": {
     "ru": "О нас",
@@ -4892,37 +4892,6 @@ const MENU = [
     "reviews": 10
   },
   {
-    "id": 1,
-    "cat": "combos",
-    "name": {
-      "ru": "Комбо №1",
-      "kz": "Комбо №1",
-      "en": "Combo #1",
-      "zh": "套餐一",
-      "hi": "कॉम्बो #1",
-      "ja": "コンボ №1"
-    },
-    "weight": "800 г",
-    "desc": {
-      "ru": "Бешбармак + Салат Ачик-чучук + Айран. Сытный классический набор для одного — всё в одном.",
-      "kz": "Бешбармақ + Ащы-тұщы салат + Айран. Бір адамға арналған классикалық тойымды жиынтық.",
-      "en": "Beshbarmak + Achik-Chuchuk Salad + Ayran. Hearty classic set for one.",
-      "zh": "别什巴尔马克 + Achik-Chuchuk 沙拉 + Ayran。 适合一人享用的丰盛经典套餐。",
-      "hi": "बेशबर्मक + सलाद अचिक-चुचुक + अयरन। एक के लिए एक हार्दिक क्लासिक सेट - ऑल इन वन।",
-      "ja": "ベシュバルマク + アチクチュクサダ + アイラン。満足感のある1人用の定番セット。"
-    },
-    "price": 2900,
-    "origPrice": 3300,
-    "img": "images/food_combo1.jpg",
-    "emoji": "🥘",
-    "gradient": [
-      "#1A237E",
-      "#C8943A"
-    ],
-    "rating": 89,
-    "reviews": 24
-  },
-  {
     "id": 10,
     "cat": "second",
     "name": {
@@ -4983,11 +4952,95 @@ const MENU = [
     ],
     "rating": 91,
     "reviews": 53
+  },
+  {
+    "id": 1901,
+    "cat": "combos",
+    "name": {
+      "ru": "Комбо Плов",
+      "kz": "Комбо Плов",
+      "en": "Combo Plov",
+      "zh": "套餐 抓饭",
+      "hi": "कॉम्बो पलोव",
+      "ja": "コンボ プロフ"
+    },
+    "weight": "Комбо",
+    "desc": {
+      "ru": "🍚 Плов\n🥗 Ачичук\n🫓 Нан\n🍵 Каркаде",
+      "kz": "🍚 Палау\n🥗 Ачичук\n🫓 Нан\n🍵 Каркаде",
+      "en": "🍚 Plov\n🥗 Achichuk salad\n🫓 Nan bread\n🍵 Karkade tea",
+      "zh": "🍚 抓饭\n🥗 阿奇丘克沙拉\n🫓 馕饼\n🍵 洛神花茶",
+      "hi": "🍚 पलोव\n🥗 अचिचुक सलाद\n🫓 नान\n🍵 कार्केड चाय",
+      "ja": "🍚 プロフ\n🥗 アチチュクサラダ\n🫓 ナン\n🍵 カルカデ茶"
+    },
+    "price": 3190,
+    "origPrice": null,
+    "img": "images/%D0%BA%D0%BE%D0%BC%D0%B1%D0%BE%D0%BF%D0%BB%D0%BE%D0%B2.png",
+    "emoji": "🍚",
+    "gradient": ["#C8943A", "#8B5E1A"],
+    "rating": 97,
+    "reviews": 0
+  },
+  {
+    "id": 1902,
+    "cat": "combos",
+    "name": {
+      "ru": "Комбо Голубцы",
+      "kz": "Комбо Голубцы",
+      "en": "Combo Golubtsy",
+      "zh": "套餐 卷心菜卷",
+      "hi": "कॉम्बो गोलुब्त्सी",
+      "ja": "コンボ ゴルブツィ"
+    },
+    "weight": "Комбо",
+    "desc": {
+      "ru": "🥬 Голубцы\n🫓 Нан\n🥗 Свежий салат\n🍵 Бокал чай",
+      "kz": "🥬 Голубцы\n🫓 Нан\n🥗 Жаңа салат\n🍵 Кесе шай",
+      "en": "🥬 Stuffed cabbage rolls\n🫓 Nan bread\n🥗 Fresh salad\n🍵 Glass of tea",
+      "zh": "🥬 卷心菜卷\n🫓 馕饼\n🥗 新鲜沙拉\n🍵 一杯茶",
+      "hi": "🥬 भरवां पत्तागोभी\n🫓 नान\n🥗 ताज़ा सलाद\n🍵 चाय का गिलास",
+      "ja": "🥬 ロールキャベツ\n🫓 ナン\n🥗 フレッシュサラダ\n🍵 お茶一杯"
+    },
+    "price": 2590,
+    "origPrice": null,
+    "img": "images/%D0%BA%D0%BE%D0%BC%D0%B1%D0%BE%D0%B3%D0%BE%D0%BB%D1%83%D0%B1%D1%86%D1%8B.png",
+    "emoji": "🥬",
+    "gradient": ["#2E7D32", "#66BB6A"],
+    "rating": 97,
+    "reviews": 0
+  },
+  {
+    "id": 1903,
+    "cat": "combos",
+    "name": {
+      "ru": "Комбо Лаваш",
+      "kz": "Комбо Лаваш",
+      "en": "Combo Lavash",
+      "zh": "套餐 薄饼卷",
+      "hi": "कॉम्बो लवाश",
+      "ja": "コンボ ラバシュ"
+    },
+    "weight": "Комбо",
+    "desc": {
+      "ru": "🌯 Лаваш Куриный\n🌶️ Халапеньо\n🥤 Кола разлив",
+      "kz": "🌯 Тауық лаваш\n🌶️ Халапеньо\n🥤 Кола құйма",
+      "en": "🌯 Chicken lavash\n🌶️ Jalapeño\n🥤 Draft cola",
+      "zh": "🌯 鸡肉薄饼\n🌶️ 墨西哥辣椒\n🥤 现调可乐",
+      "hi": "🌯 चिकन लवाश\n🌶️ हलापीनो\n🥤 ड्राफ्ट कोला",
+      "ja": "🌯 チキンラバシュ\n🌶️ ハラペーニョ\n🥤 ドラフトコーラ"
+    },
+    "price": 2190,
+    "origPrice": null,
+    "img": "images/%D0%BA%D0%BE%D0%BC%D0%B1%D0%BE%D0%BB%D0%B0%D0%B2%D0%B0%D1%88.png",
+    "emoji": "🌯",
+    "gradient": ["#1565C0", "#42A5F5"],
+    "rating": 97,
+    "reviews": 0
   }
 ];
 
 const PROMOS = [
-  { title: { ru: '🔥 Скидка 15% на Комбо!', kz: '🔥 Комбоға 15% жеңілдік!', en: '🔥 15% off Combos!', zh: '🔥 套餐 85折！', hi: '🔥 कॉम्बो पर 15% की छूट!' , ja: '🔥 コンボが15%オフ！'}, sub: { ru: 'При заказе онлайн', kz: 'Онлайн тапсырыс бергенде', en: 'When ordering online', zh: '在线订购时', hi: 'ऑनलाइन ऑर्डर पर' , ja: 'オンライン注文の場合'}, icon:'🔥', bg:'rgba(200,148,58,0.12)', border:'rgba(200,148,58,0.35)', badge:'−15%' },
+
   { title: { ru: '🥟 Каждая 5-я Самса бесплатно!', kz: '🥟 Әрбір 5-ші самса тегін!', en: '🥟 Every 5th Samsa is free!', zh: '🥟 每买5个烤包子免1个！', hi: '🥟 हर 5वां समोसा मुफ़्त!' , ja: '🥟 サモサ5個ごとに1個無料！'}, sub: { ru: 'Ежедневная акция без ограничений', kz: 'Күнделікті шектеусіз акция', en: 'Daily promo without limits', zh: '每日促销，无限制', hi: 'दैनिक असीमित ऑफ़र' , ja: '無制限の毎日プロモーション'}, icon:'🥟', bg:'rgba(230,57,70,0.10)',  border:'rgba(230,57,70,0.3)',   badge:'FREE' },
   { title: { ru: '☕ 10-й Кофе в подарок!', kz: '☕ 10-шы Кофе сыйлыққа!', en: '☕ 10th Coffee for free!', zh: '☕ 第10杯咖啡免费！', hi: '☕ 10वीं कॉफ़ी मुफ़्त!' , ja: '☕ 10杯目のコーヒーは無料！'}, sub: { ru: 'Сохраняйте чеки и обменивайте на бесплатный кофе', kz: 'Чектерді сақтап, тегін кофеге айырбастаңыз', en: 'Save receipts and exchange for free coffee', zh: '保存收据并兑换免费咖啡', hi: 'रसीदें सहेजें और मुफ़्त कॉफ़ी पाएं' , ja: 'レシートを集めて無料のコーヒーと交換'}, icon:'☕', bg:'rgba(121,85,72,0.10)',  border:'rgba(121,85,72,0.3)',   badge:'10+1' },
 ];
@@ -5006,6 +5059,34 @@ let currentSection  = 'home';
 let currentSuperCat = 'food';
 let currentCat      = 'breakfasts';
 let cart            = JSON.parse(localStorage.getItem('martebe_cart') || '[]');
+
+// Combo items used to share IDs 901-903 with other dishes. Migrate only
+// previously saved combo rows so old carts keep pointing to the right items.
+const LEGACY_COMBO_IDS = { 901: 1901, 902: 1902, 903: 1903 };
+let cartWasMigrated = false;
+cart = cart.map(cartItem => {
+  const ruName = cartItem.name && typeof cartItem.name === 'object'
+    ? cartItem.name.ru
+    : cartItem.name;
+  const newId = LEGACY_COMBO_IDS[cartItem.id];
+  if (!newId || !String(ruName || '').startsWith('Комбо ')) return cartItem;
+
+  const combo = MENU.find(menuItem => menuItem.id === newId);
+  if (!combo) return cartItem;
+  cartWasMigrated = true;
+  return {
+    ...cartItem,
+    id: combo.id,
+    name: combo.name,
+    price: combo.price,
+    emoji: combo.emoji,
+    gradient: combo.gradient,
+    img: combo.img
+  };
+});
+if (cartWasMigrated) {
+  localStorage.setItem('martebe_cart', JSON.stringify(cart));
+}
 let modalId         = null;
 let modalQty        = 1;
 let promoIdx        = 0;
@@ -5631,7 +5712,8 @@ function openModal(id) {
 
   document.getElementById('modal-name').textContent = item.name[currentLang];
   document.getElementById('modal-price').textContent = item.price.toLocaleString('ru-RU') + ' ₸';
-  document.getElementById('modal-desc').textContent = item.desc && item.desc[currentLang] ? item.desc[currentLang] : '';
+  const descText = item.desc && item.desc[currentLang] ? item.desc[currentLang] : '';
+  document.getElementById('modal-desc').innerHTML = descText.replace(/\n/g, '<br>');
 
   const origEl = document.getElementById('modal-orig-price');
   if (item.origPrice) { origEl.textContent = item.origPrice.toLocaleString('ru-RU') + ' ₸'; origEl.style.display = 'block'; }
@@ -5815,60 +5897,91 @@ function orderViaWhatsApp() {
     }
   }
 
-  let msg = '🍽️ *Заказ из ресторана märtebe*\n\n';
-
+  // ── Build order type info ──────────────────────────────────────
+  let typeEmoji = '🥡';
   let typeStr = 'С собой';
-  if (orderType === 'dinein') typeStr = 'В заведении';
-  if (orderType === 'delivery') typeStr = 'Доставка';
-
-  msg += `Способ получения: *${typeStr}*\n`;
-  if (orderType === 'delivery') {
-    msg += `📍 Адрес: *${document.getElementById('delivery-address').value.trim()}*\n`;
-  } else if (orderType === 'dinein') {
-    const tableEl = document.getElementById('table-number');
-    if (tableEl && tableEl.value.trim()) {
-      msg += `🪑 Стол: *${tableEl.value.trim()}*\n`;
-    }
-    msg += `⚠️ _Примечание: заказ сделан заранее, стол может быть занят._\n`;
-  }
-  msg += '\n';
+  if (orderType === 'dinein')   { typeStr = 'В заведении'; typeEmoji = '🍽️'; }
+  if (orderType === 'delivery') { typeStr = 'Доставка';    typeEmoji = '🛵'; }
 
   // Fix: for Chinese language, send dish names in Kazakh
   const langForMsg = currentLang === 'zh' ? 'kz' : currentLang;
 
-  cart.forEach(i => {
+  // ── Header ─────────────────────────────────────────────────────
+  let msg = '';
+  msg += `Сәлеметсіздер ме! 👋\n\n`;
+  msg += `🏠 *märtebe* — Ресторан\n`;
+  msg += `━━━━━━━━━━━━━━━━\n`;
+  msg += `📋 *НОВЫЙ ЗАКАЗ*\n`;
+  msg += `\n`;
+
+  // ── Order type block ───────────────────────────────────────────
+  msg += `${typeEmoji} *Тип:* ${typeStr}\n`;
+  if (orderType === 'delivery') {
+    msg += `📍 *Адрес:* ${document.getElementById('delivery-address').value.trim()}\n`;
+  } else if (orderType === 'dinein') {
+    const tableEl = document.getElementById('table-number');
+    if (tableEl && tableEl.value.trim()) {
+      msg += `🪑 *Стол №:* ${tableEl.value.trim()}\n`;
+    }
+  }
+  msg += `\n`;
+
+  // ── Items block ────────────────────────────────────────────────
+  msg += `┌─── 🛒 *СОСТАВ ЗАКАЗА* ───┐\n`;
+  msg += `│\n`;
+  cart.forEach((i, idx) => {
     const itemName = i.name[langForMsg] || i.name;
-    msg += `${i.emoji} ${itemName} × ${i.qty} = ${(i.price * i.qty).toLocaleString('ru-RU')} ₸\n`;
+    const lineTotal = (i.price * i.qty).toLocaleString('ru-RU');
+    const unitPrice = i.price.toLocaleString('ru-RU');
+    msg += `│ ${i.emoji} *${itemName}*\n`;
+    msg += `│    ${i.qty} шт × ${unitPrice} ₸ = *${lineTotal} ₸*\n`;
+    if (idx < cart.length - 1) msg += `│\n`;
   });
 
+
+  // ── Packaging ──────────────────────────────────────────────────
   let subTotal = getCartTotal();
   const cInfo = getContainersInfo();
+  let hasPackaging = false;
 
-  if (cInfo.containersCount > 0) {
-    msg += `\nКонтейнеры: ${cInfo.containersCount} шт × 150 = ${cInfo.containersTotal.toLocaleString('ru-RU')} ₸\n`;
-    subTotal += cInfo.containersTotal;
-  }
-  
-  if (cInfo.boxesCount > 0) {
-    msg += `\nКоробки для пиццы: ${cInfo.boxesCount} шт × 150 = ${cInfo.boxesTotal.toLocaleString('ru-RU')} ₸\n`;
-    subTotal += cInfo.boxesTotal;
+  if (cInfo.containersCount > 0 || cInfo.boxesCount > 0) {
+    hasPackaging = true;
+    msg += `\n📦 *Упаковка:*\n`;
+    if (cInfo.containersCount > 0) {
+      msg += `   Контейнеры: ${cInfo.containersCount} шт × 150 ₸ = ${cInfo.containersTotal.toLocaleString('ru-RU')} ₸\n`;
+      subTotal += cInfo.containersTotal;
+    }
+    if (cInfo.boxesCount > 0) {
+      msg += `   Коробки для пиццы: ${cInfo.boxesCount} шт × 150 ₸ = ${cInfo.boxesTotal.toLocaleString('ru-RU')} ₸\n`;
+      subTotal += cInfo.boxesTotal;
+    }
   }
 
+  // ── Totals block ───────────────────────────────────────────────
   let finalTotal = subTotal;
+  msg += `\n`;
 
   if (orderType === 'dinein') {
     const service = Math.round(subTotal * 0.12);
-    msg += `\nОбслуживание 12%: ${service.toLocaleString('ru-RU')} ₸`;
     finalTotal = Math.round(subTotal * 1.12);
+    msg += `   Сумма заказа:   ${subTotal.toLocaleString('ru-RU')} ₸\n`;
+    msg += `   Обслуживание:   ${service.toLocaleString('ru-RU')} ₸ (12%)\n`;
+    msg += `━━━━━━━━━━━━━━━━━━━━━━━\n`;
   }
 
-  msg += `\n💰 *Итого: ${finalTotal.toLocaleString('ru-RU')} ₸*`;
+  msg += `💰 *ИТОГО: ${finalTotal.toLocaleString('ru-RU')} ₸*\n`;
 
+
+  // ── Notes ──────────────────────────────────────────────────────
+  if (orderType === 'dinein') {
+    msg += `\n⚠️ _Заказ сделан заранее — стол может быть занят._\n`;
+  }
   if (orderType === 'delivery') {
-    msg += '\n\n_Примечание: доставка вне таможни оплачивается клиентом (такси)._';
+    msg += `\n⚠️ _Доставка вне таможни оплачивается клиентом (такси)._\n`;
   }
 
-  msg += '\n\n📍 _Сарыагаш, Кошербаева 1А. Жду подтверждения!_';
+  msg += `\n📍 _Сарыагаш, Кошербаева 1А_\n`;
+  msg += `✅ _Жду подтверждения!_`;
   
   if (contactChannel === 'instagram') {
     const successToast = currentLang === 'ru' ? 'Заказ скопирован! Открываем Instagram...' : 
@@ -6238,5 +6351,3 @@ function _cvmRender() {
     }
   }, { passive: true });
 })();
-
-
