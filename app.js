@@ -4,7 +4,7 @@
 
 // WhatsApp Numbers
 const WA_ORDER = '77021101155';
-const WA_BOOKING = '77029870200';
+const WA_BOOKING = '77021874017';
 
 // ── I18N DICTIONARY ───────────────────────────────────────────
 const I18N = {
@@ -5093,6 +5093,16 @@ let promoIdx        = 0;
 let promoTimer      = null;
 let orderType       = 'takeaway';
 
+function getLocalizedText(value, lang = currentLang) {
+  if (value == null) return '';
+  if (typeof value !== 'object') return String(value);
+
+  const localized = value[lang] ?? value.ru ?? value.kz ?? value.en;
+  return localized == null || typeof localized === 'object'
+    ? ''
+    : String(localized);
+}
+
 function setLang(lang) {
   if (currentLang === lang) return;
   currentLang = lang;
@@ -5316,7 +5326,7 @@ function addToCart(id, qty = 1) {
   updateCartBar();
   refreshCtrl(id);        // update card control
   // Show toast notification
-  const name = item.name[currentLang] || item.name.ru;
+  const name = getLocalizedText(item.name);
   showToast('✓ ' + (I18N.toast_added ? I18N.toast_added[currentLang] : 'Добавлено в корзину'), name);
 }
 
@@ -5807,7 +5817,7 @@ function renderDrawerItems() {
       <div class="drawer-item">
         <div class="di-img" style="${iStyle}">${!item.img ? item.emoji : ''}</div>
         <div class="di-info">
-          <div class="di-name">${item.name[currentLang] || item.name}</div>
+          <div class="di-name">${getLocalizedText(item.name)}</div>
           <div class="di-price">${item.price.toLocaleString('ru-RU')} ₸</div>
         </div>
         <div class="di-qty">
@@ -5930,7 +5940,7 @@ function orderViaWhatsApp() {
   msg += `┌─── 🛒 *СОСТАВ ЗАКАЗА* ───┐\n`;
   msg += `│\n`;
   cart.forEach((i, idx) => {
-    const itemName = i.name[langForMsg] || i.name;
+    const itemName = getLocalizedText(i.name, langForMsg);
     const lineTotal = (i.price * i.qty).toLocaleString('ru-RU');
     const unitPrice = i.price.toLocaleString('ru-RU');
     msg += `│ ${i.emoji} *${itemName}*\n`;
@@ -6031,7 +6041,10 @@ function orderViaWhatsApp() {
 // ============================================================
 function bookCabin(id) {
   const cabin = CABINS.find(c => c.id === id);
-  let msg = `Здравствуйте! Хочу забронировать *${cabin.name}* в ресторане märtebe.\n\nПодскажите, свободна ли она на сегодня/завтра?`;
+  if (!cabin) return;
+
+  const cabinName = getLocalizedText(cabin.name);
+  let msg = `Здравствуйте! Хочу забронировать *${cabinName}* в ресторане märtebe.\n\nПодскажите, свободна ли она на сегодня/завтра?`;
   window.open(`https://wa.me/${WA_BOOKING}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
