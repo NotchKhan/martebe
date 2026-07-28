@@ -320,6 +320,14 @@ const I18N = {
     "hi": "कार्ट में डालें",
     "ja": "カートに追加"
   },
+  "modal_size": {
+    "ru": "Объём",
+    "kz": "Көлем",
+    "en": "Size",
+    "zh": "容量",
+    "hi": "आकार",
+    "ja": "サイズ"
+  },
   "drawer_title": {
     "ru": "Ваш заказ",
     "kz": "Сіздің тапсырысыңыз",
@@ -722,7 +730,7 @@ const SUPER_CATEGORIES = [
 const SUPER_CAT_MAP = {
   food: ['breakfasts', 'salads', 'first', 'second', 'steaks', 'sauces'],
   fastfood_super: ['pizza', 'burgers', 'lavash', 'fastfood'],
-  drinks: ['drinks'],
+  drinks: ['drinks', 'lemonades'],
   bread: ['bread'],
   banquet: ['assorted', 'banquet'],
 };
@@ -858,6 +866,18 @@ const CATEGORIES = [
       "zh": "饮料",
       "hi": "पेय",
       "ja": "ドリンク"
+    },
+    "superCat": "drinks"
+  },
+  {
+    "key": "lemonades",
+    "label": {
+      "ru": "Лимонады",
+      "kz": "Лимонадтар",
+      "en": "Lemonades",
+      "zh": "柠檬水",
+      "hi": "लेमोनेड",
+      "ja": "レモネード"
     },
     "superCat": "drinks"
   },
@@ -5135,6 +5155,109 @@ for (const [id, [kind, ruDescription]] of Object.entries(MENU_DESCRIPTION_REPAIR
   }
 }
 
+// All regular lemonades share one price table. New flavours automatically use
+// the standard tier unless they explicitly opt into another one.
+const LEMONADE_PRICING = Object.freeze({
+  standard: Object.freeze({ '0.5': 890, '1': 1890 }),
+  signature: Object.freeze({ '0.5': 990, '1': 2390 })
+});
+
+function getLemonadePrice(priceTier = 'standard', size = '0.5') {
+  const prices = LEMONADE_PRICING[priceTier] || LEMONADE_PRICING.standard;
+  return prices[size] ?? prices['0.5'];
+}
+
+const LEMONADE_FLAVORS = [
+  {
+    id: 2001,
+    flavour: { ru: 'Ананас', kz: 'Ананас', en: 'Pineapple', zh: '菠萝', hi: 'अनानास', ja: 'パイナップル' },
+    img: 'images/webp/л_ананас-890.webp'
+  },
+  {
+    id: 2002,
+    flavour: { ru: 'Мохито', kz: 'Мохито', en: 'Mojito', zh: '莫吉托', hi: 'मोजिटो', ja: 'モヒート' },
+    img: 'images/webp/л_мохито-890.webp'
+  },
+  {
+    id: 2003,
+    flavour: { ru: 'Манго-маракуйя', kz: 'Манго-маракуйя', en: 'Mango Passion Fruit', zh: '芒果百香果', hi: 'मैंगो पैशन फ्रूट', ja: 'マンゴー・パッションフルーツ' },
+    img: 'images/webp/л_манго-маракуйя-890.webp'
+  },
+  {
+    id: 2004,
+    flavour: { ru: 'Манго-ананас', kz: 'Манго-ананас', en: 'Mango Pineapple', zh: '芒果菠萝', hi: 'मैंगो पाइनएप्पल', ja: 'マンゴー・パイナップル' },
+    img: 'images/webp/л_манго-ананас-890.webp'
+  },
+  {
+    id: 2005,
+    flavour: { ru: 'Манго-персик', kz: 'Манго-шабдалы', en: 'Mango Peach', zh: '芒果桃子', hi: 'मैंगो पीच', ja: 'マンゴー・ピーチ' },
+    img: 'images/webp/л_манго-персик-890.webp'
+  },
+  {
+    id: 2006,
+    flavour: { ru: 'Апельсин', kz: 'Апельсин', en: 'Orange', zh: '橙子', hi: 'संतरा', ja: 'オレンジ' },
+    img: 'images/webp/л_апельсин-890.webp'
+  },
+  {
+    id: 2007,
+    flavour: { ru: 'Киви-лайм', kz: 'Киви-лайм', en: 'Kiwi Lime', zh: '猕猴桃青柠', hi: 'कीवी लाइम', ja: 'キウイ・ライム' },
+    img: 'images/webp/л_киви-лайм-890.webp'
+  },
+  {
+    id: 2008,
+    flavour: { ru: 'Клубника-банан', kz: 'Құлпынай-банан', en: 'Strawberry Banana', zh: '草莓香蕉', hi: 'स्ट्रॉबेरी बनाना', ja: 'ストロベリー・バナナ' },
+    img: 'images/webp/л_клубника-банан-890.webp'
+  },
+  {
+    id: 2009,
+    flavour: { ru: 'Ягодный', kz: 'Жидекті', en: 'Berry', zh: '莓果', hi: 'बेरी', ja: 'ベリー' },
+    img: 'images/webp/л_ягодный-890.webp'
+  },
+  {
+    id: 2010,
+    flavour: { ru: 'Тархун', kz: 'Тархун', en: 'Tarragon', zh: '龙蒿', hi: 'तारगोन', ja: 'タラゴン' },
+    img: 'images/webp/л_тархун-890.webp'
+  },
+  {
+    id: 2011,
+    flavour: { ru: 'Мәртебе', kz: 'Мәртебе', en: 'Martebe', zh: 'Märtebe', hi: 'मर्तेबे', ja: 'マルテベ' },
+    img: 'images/webp/л_мартебе-990.webp',
+    priceTier: 'signature'
+  }
+];
+
+for (const lemonade of LEMONADE_FLAVORS) {
+  const priceTier = lemonade.priceTier || 'standard';
+  MENU.push({
+    id: lemonade.id,
+    cat: 'lemonades',
+    name: {
+      ru: `Лимонад «${lemonade.flavour.ru}»`,
+      kz: `«${lemonade.flavour.kz}» лимонады`,
+      en: `${lemonade.flavour.en} Lemonade`,
+      zh: `${lemonade.flavour.zh}柠檬水`,
+      hi: `${lemonade.flavour.hi} लेमोनेड`,
+      ja: `${lemonade.flavour.ja}レモネード`
+    },
+    weight: '0,5 / 1 л',
+    desc: {
+      ru: `Освежающий фирменный лимонад со вкусом «${lemonade.flavour.ru}». Выберите объём: 0,5 или 1 литр.`,
+      kz: `${lemonade.flavour.kz} дәмі бар сергітетін фирмалық лимонад. Көлемін таңдаңыз: 0,5 немесе 1 литр.`,
+      en: `Refreshing house lemonade with ${lemonade.flavour.en.toLowerCase()} flavour. Choose 0.5 or 1 litre.`,
+      zh: `清爽的${lemonade.flavour.zh}风味招牌柠檬水。可选择0.5升或1升。`,
+      hi: `${lemonade.flavour.hi} स्वाद वाला ताज़गीभरा सिग्नेचर लेमोनेड। 0.5 या 1 लीटर चुनें।`,
+      ja: `${lemonade.flavour.ja}風味の爽やかな特製レモネード。0.5または1リットルをお選びください。`
+    },
+    price: getLemonadePrice(priceTier, '0.5'),
+    origPrice: null,
+    img: lemonade.img,
+    emoji: '🍹',
+    gradient: ['#F9A825', '#43A047'],
+    priceTier,
+    sizeOptions: ['0.5', '1']
+  });
+}
+
 const PROMOS = [
 
   { title: { ru: '🥟 Каждая 5-я Самса бесплатно!', kz: '🥟 Әрбір 5-ші самса тегін!', en: '🥟 Every 5th Samsa is free!', zh: '🥟 每买5个烤包子免1个！', hi: '🥟 हर 5वां समोसा मुफ़्त!' , ja: '🥟 サモサ5個ごとに1個無料！'}, sub: { ru: 'Ежедневная акция без ограничений', kz: 'Күнделікті шектеусіз акция', en: 'Daily promo without limits', zh: '每日促销，无限制', hi: 'दैनिक असीमित ऑफ़र' , ja: '無制限の毎日プロモーション'}, icon:'🥟', bg:'rgba(230,57,70,0.10)',  border:'rgba(230,57,70,0.3)',   badge:'FREE' },
@@ -5185,6 +5308,7 @@ if (cartWasMigrated) {
 }
 let modalId         = null;
 let modalQty        = 1;
+let modalVariantKey = null;
 let promoIdx        = 0;
 let promoTimer      = null;
 let orderType       = 'takeaway';
@@ -5246,7 +5370,10 @@ function setLang(lang) {
     const m = MENU.find(x => x.id === modalId);
     if (m) {
       document.getElementById('modal-name').textContent = m.name[currentLang];
-      document.getElementById('modal-desc').textContent = m.desc[currentLang];
+      const descText = m.desc && m.desc[currentLang] ? m.desc[currentLang] : '';
+      document.getElementById('modal-desc').innerHTML = descText.replace(/\n/g, '<br>');
+      renderModalVariantSelector(m);
+      updateModalQtyDisplay();
     }
   }
   if (document.getElementById('cart-drawer').classList.contains('open')) {
@@ -5353,7 +5480,28 @@ function setOrderType(type) {
 function saveCart() { localStorage.setItem('martebe_cart', JSON.stringify(cart)); }
 function getCartCount() { return cart.reduce((s, i) => s + i.qty, 0); }
 function getCartTotal() { return cart.reduce((s, i) => s + i.price * i.qty, 0); }
-function getQty(id) { const f = cart.find(c => c.id === id); return f ? f.qty : 0; }
+function getQty(id) { return cart.filter(c => c.id === id).reduce((sum, item) => sum + item.qty, 0); }
+
+function getCartItemKey(cartItem) {
+  return String(cartItem.cartKey || cartItem.id);
+}
+
+function getDefaultVariantKey(item) {
+  return item && item.sizeOptions && item.sizeOptions.length ? item.sizeOptions[0] : null;
+}
+
+function getVariantLabel(variantKey) {
+  if (variantKey === '0.5') return '0,5 л';
+  if (variantKey === '1') return '1 л';
+  return '';
+}
+
+function getItemUnitPrice(item, variantKey = null) {
+  if (item && item.sizeOptions) {
+    return getLemonadePrice(item.priceTier, variantKey || getDefaultVariantKey(item));
+  }
+  return item ? item.price : 0;
+}
 
 function getContainersInfo() {
   let res = { containersCount: 0, boxesCount: 0, containersTotal: 0, boxesTotal: 0 };
@@ -5409,13 +5557,20 @@ function pluralRu(n, w) {
   return w[2];
 }
 
-function addToCart(id, qty = 1) {
+function addToCart(id, qty = 1, variantKey = null) {
   const item = MENU.find(m => m.id === id);
   if (!item) return;
-  const ex = cart.find(c => c.id === id);
+  const selectedVariant = item.sizeOptions
+    ? (item.sizeOptions.includes(variantKey) ? variantKey : getDefaultVariantKey(item))
+    : null;
+  const cartKey = selectedVariant ? `${id}:${selectedVariant}` : String(id);
+  const unitPrice = getItemUnitPrice(item, selectedVariant);
+  const ex = cart.find(c => getCartItemKey(c) === cartKey);
   if (ex) ex.qty += qty;
   else cart.push({
-    id: item.id, name: item.name, price: item.price, qty,
+    id: item.id, cartKey, name: item.name, price: unitPrice, qty,
+    variantKey: selectedVariant,
+    variantLabel: getVariantLabel(selectedVariant),
     emoji: item.emoji, gradient: item.gradient, img: item.img
   });
   saveCart();
@@ -5426,21 +5581,24 @@ function addToCart(id, qty = 1) {
   showToast('✓ ' + (I18N.toast_added ? I18N.toast_added[currentLang] : 'Добавлено в корзину'), name);
 }
 
-function removeFromCart(id) {
-  cart = cart.filter(c => c.id !== id);
+function removeFromCart(cartKey) {
+  const removed = cart.find(c => getCartItemKey(c) === String(cartKey));
+  cart = cart.filter(c => getCartItemKey(c) !== String(cartKey));
   saveCart();
   updateCartBar();
-  refreshCtrl(id);
+  if (removed) refreshCtrl(removed.id);
 }
 
-function changeQty(id, delta) {
-  const item = cart.find(c => c.id === id);
+function changeQty(cartKey, delta) {
+  const item = cart.find(c => getCartItemKey(c) === String(cartKey));
   if (!item) return;
   item.qty += delta;
-  if (item.qty <= 0) { cart = cart.filter(c => c.id !== id); }
+  if (item.qty <= 0) {
+    cart = cart.filter(c => getCartItemKey(c) !== String(cartKey));
+  }
   saveCart();
   updateCartBar();
-  refreshCtrl(id);
+  refreshCtrl(item.id);
   renderDrawerItems();    // update drawer if open
 }
 
@@ -5494,7 +5652,13 @@ function updateCartBar() {
 //  CARD CONTROL  —  refreshes "+" or "− N +" in image
 // ============================================================
 function cardCtrlHtml(id) {
+  const item = MENU.find(menuItem => menuItem.id === id);
   const qty = getQty(id);
+  if (item && item.sizeOptions) {
+    return `<button class="card-plus" data-id="${id}"
+                    onclick="event.stopPropagation();openModal(${id})"
+                    aria-label="Выбрать объём">${qty || '+'}</button>`;
+  }
   if (qty === 0) {
     return `<button class="card-plus" data-id="${id}"
                     onclick="quickAdd(event,${id})"
@@ -5801,7 +5965,9 @@ function renderCabins() {
 function openModal(id) {
   const item = MENU.find(m => m.id === id);
   if (!item) return;
-  modalId = id; modalQty = 1;
+  modalId = id;
+  modalQty = 1;
+  modalVariantKey = getDefaultVariantKey(item);
 
   const imgEl = document.getElementById('modal-img-el');
   if (item.img) {
@@ -5817,9 +5983,10 @@ function openModal(id) {
   }
 
   document.getElementById('modal-name').textContent = item.name[currentLang];
-  document.getElementById('modal-price').textContent = item.price.toLocaleString('ru-RU') + ' ₸';
+  document.getElementById('modal-price').textContent = getItemUnitPrice(item, modalVariantKey).toLocaleString('ru-RU') + ' ₸';
   const descText = item.desc && item.desc[currentLang] ? item.desc[currentLang] : '';
   document.getElementById('modal-desc').innerHTML = descText.replace(/\n/g, '<br>');
+  renderModalVariantSelector(item);
 
   const origEl = document.getElementById('modal-orig-price');
   if (item.origPrice) { origEl.textContent = item.origPrice.toLocaleString('ru-RU') + ' ₸'; origEl.style.display = 'block'; }
@@ -5854,6 +6021,36 @@ function closeModal() {
   document.getElementById('item-modal').classList.remove('open');
   document.body.style.overflow = '';
   modalId = null;
+  modalVariantKey = null;
+}
+
+function renderModalVariantSelector(item) {
+  const wrapper = document.getElementById('modal-variant');
+  const options = document.getElementById('modal-variant-options');
+  if (!wrapper || !options) return;
+
+  if (!item || !item.sizeOptions) {
+    wrapper.hidden = true;
+    options.innerHTML = '';
+    return;
+  }
+
+  wrapper.hidden = false;
+  options.innerHTML = item.sizeOptions.map(size => {
+    const price = getItemUnitPrice(item, size).toLocaleString('ru-RU');
+    const active = size === modalVariantKey ? ' active' : '';
+    return `<button class="modal-variant-btn${active}" type="button"
+                    onclick="selectModalVariant('${size}')">${getVariantLabel(size)} · ${price} ₸</button>`;
+  }).join('');
+}
+
+function selectModalVariant(variantKey) {
+  const item = MENU.find(m => m.id === modalId);
+  if (!item || !item.sizeOptions || !item.sizeOptions.includes(variantKey)) return;
+  modalVariantKey = variantKey;
+  document.getElementById('modal-price').textContent = getItemUnitPrice(item, modalVariantKey).toLocaleString('ru-RU') + ' ₸';
+  renderModalVariantSelector(item);
+  updateModalQtyDisplay();
 }
 
 function changeModalQty(delta) {
@@ -5865,12 +6062,12 @@ function updateModalQtyDisplay() {
   document.getElementById('modal-qty-num').textContent = modalQty;
   const item = MENU.find(m => m.id === modalId);
   if (item) document.getElementById('modal-add-price').textContent =
-    (item.price * modalQty).toLocaleString('ru-RU') + ' ₸';
+    (getItemUnitPrice(item, modalVariantKey) * modalQty).toLocaleString('ru-RU') + ' ₸';
 }
 
 function addFromModal() {
   if (!modalId) return;
-  addToCart(modalId, modalQty);
+  addToCart(modalId, modalQty, modalVariantKey);
   closeModal();
 }
 
@@ -5909,17 +6106,19 @@ function renderDrawerItems() {
     const iStyle = item.img
       ? `background-image:url('${item.img}');background-size:cover;background-position:center`
       : `background:linear-gradient(135deg,${item.gradient[0]},${item.gradient[1]})`;
+    const variantSuffix = item.variantLabel ? ` · ${item.variantLabel}` : '';
+    const cartKeyArg = JSON.stringify(getCartItemKey(item));
     return `
       <div class="drawer-item">
         <div class="di-img" style="${iStyle}">${!item.img ? item.emoji : ''}</div>
         <div class="di-info">
-          <div class="di-name">${getLocalizedText(item.name)}</div>
+          <div class="di-name">${getLocalizedText(item.name)}${variantSuffix}</div>
           <div class="di-price">${item.price.toLocaleString('ru-RU')} ₸</div>
         </div>
         <div class="di-qty">
-          <button class="di-qty-btn" onclick="changeQty(${item.id},-1)">−</button>
+          <button class="di-qty-btn" onclick='changeQty(${cartKeyArg},-1)'>−</button>
           <span class="di-qty-num">${item.qty}</span>
-          <button class="di-qty-btn" onclick="changeQty(${item.id},+1)">+</button>
+          <button class="di-qty-btn" onclick='changeQty(${cartKeyArg},+1)'>+</button>
         </div>
       </div>`;
   }).join('');
@@ -6036,7 +6235,7 @@ function orderViaWhatsApp() {
   msg += `┌─── 🛒 *СОСТАВ ЗАКАЗА* ───┐\n`;
   msg += `│\n`;
   cart.forEach((i, idx) => {
-    const itemName = getLocalizedText(i.name, langForMsg);
+    const itemName = getLocalizedText(i.name, langForMsg) + (i.variantLabel ? ` · ${i.variantLabel}` : '');
     const lineTotal = (i.price * i.qty).toLocaleString('ru-RU');
     const unitPrice = i.price.toLocaleString('ru-RU');
     msg += `│ ${i.emoji} *${itemName}*\n`;
